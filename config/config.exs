@@ -41,7 +41,8 @@ config :spark,
 
 config :cineaste,
   ecto_repos: [Cineaste.Repo],
-  generators: [timestamp_type: :utc_datetime]
+  generators: [timestamp_type: :utc_datetime],
+  ash_domains: [Cineaste.Library]
 
 # Configures the endpoint
 config :cineaste, CineasteWeb.Endpoint,
