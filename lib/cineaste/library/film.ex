@@ -9,6 +9,14 @@ defmodule Cineaste.Library.Film do
     repo Cineaste.Repo
   end
 
+  actions do
+    defaults [:read]
+
+    create :create do
+      accept [:slug, :title, :release_date, :runtime, :showcased]
+    end
+  end
+
   attributes do
     uuid_primary_key :id
 
@@ -20,6 +28,10 @@ defmodule Cineaste.Library.Film do
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
+  end
+
+  calculations do
+    calculate :sort_title, :string, Cineaste.Library.Calculations.SortTitle
   end
 
   identities do

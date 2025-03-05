@@ -3,6 +3,8 @@ defmodule Cineaste.Library do
     otp_app: :cineaste
 
   resources do
-    resource Cineaste.Library.Film
+    resource Cineaste.Library.Film do
+      define :read_films, action: :read
+    end
   end
 end
