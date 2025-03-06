@@ -1,5 +1,5 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-
+@import "daisyui/theme/caramellatte";
 /* This file is for your main application CSS */

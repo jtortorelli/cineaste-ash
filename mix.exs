@@ -61,7 +61,8 @@ defmodule Cineaste.MixProject do
       {:jason, "~> 1.2"},
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
-      {:igniter, "~> 0.5.31", only: [:dev]}
+      {:igniter, "~> 0.5.31", only: [:dev]},
+      {:daisyui, github: "saadeghi/daisyui", tag: "v5.0.0", app: false, compile: false, depth: 1}
     ]
   end
 
