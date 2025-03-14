@@ -30,6 +30,7 @@ defmodule Cineaste.Library.Film do
   attributes do
     uuid_primary_key :id
 
+    attribute :aliases, {:array, Cineaste.Library.FilmAlias}, default: []
     attribute :original_title, :string
     attribute :original_title_translation, :string
     attribute :original_title_transliteration, :string
