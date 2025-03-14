@@ -13,13 +13,27 @@ defmodule Cineaste.Library.Film do
     defaults [:read]
 
     create :create do
-      accept [:slug, :title, :release_date, :runtime, :showcased]
+      accept [
+        :original_title,
+        :original_title_transliteration,
+        :original_title_translation,
+        :poster_url,
+        :slug,
+        :title,
+        :release_date,
+        :runtime,
+        :showcased
+      ]
     end
   end
 
   attributes do
     uuid_primary_key :id
 
+    attribute :original_title, :string
+    attribute :original_title_translation, :string
+    attribute :original_title_transliteration, :string
+    attribute :poster_url, :string
     attribute :slug, :string, allow_nil?: false
     attribute :title, :string, allow_nil?: false
     attribute :release_date, :date, allow_nil?: false

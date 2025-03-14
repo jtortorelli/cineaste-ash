@@ -69,7 +69,7 @@ defmodule Cineaste.MixProject do
        app: false,
        compile: false,
        depth: 1},
-       {:tabler_icons,
+      {:tabler_icons,
        github: "tabler/tabler-icons",
        tag: "v3.19.0",
        sparse: "icons",
