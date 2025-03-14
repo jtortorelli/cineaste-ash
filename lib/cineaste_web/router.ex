@@ -19,6 +19,7 @@ defmodule CineasteWeb.Router do
 
     live "/", IndexLive
     live "/about", AboutLive
+    live "/films", FilmsLive
   end
 
   # Other scopes may use custom stacks.

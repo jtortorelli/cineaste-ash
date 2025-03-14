@@ -44,17 +44,15 @@ module.exports = {
       let iconsDir = path.join(__dirname, "../deps/tabler_icons/icons")
       let values = {}
       let icons = [
-        ["", "/24/outline"],
-        ["-solid", "/24/solid"],
-        ["-mini", "/20/solid"],
-        ["-micro", "/16/solid"]
+        ["", "/outline"],
+        ["-filled", "/filled"],
       ]
       icons.forEach(([suffix, dir]) => {
-        fs.readdirSync(path.join(iconsDir, dir)).forEach(file => {
-          let name = path.basename(file, ".svg") + suffix
-          values[name] = { name, fullPath: path.join(iconsDir, dir, file) }
-        })
-      })
+        fs.readdirSync(path.join(iconsDir, dir)).forEach((file) => {
+          const name = path.basename(file, ".svg") + suffix;
+          values[name] = { name, fullPath: path.join(iconsDir, dir, file) };
+        });
+      });
       matchComponents({
         tabler: ({ name, fullPath }) => {
           let content = fs.readFileSync(fullPath).toString().replace(/\r?\n|\r/g, "")
