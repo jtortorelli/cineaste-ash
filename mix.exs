@@ -62,7 +62,20 @@ defmodule Cineaste.MixProject do
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
       {:igniter, "~> 0.5.31", only: [:dev]},
-      {:daisyui, github: "saadeghi/daisyui", tag: "v5.0.0", app: false, compile: false, depth: 1}
+      {:daisyui, github: "saadeghi/daisyui", tag: "v5.0.0", app: false, compile: false, depth: 1},
+      {:tailwindcss_typography,
+       github: "tailwindlabs/tailwindcss-typography",
+       tag: "v0.5.16",
+       app: false,
+       compile: false,
+       depth: 1},
+       {:tabler_icons,
+       github: "tabler/tabler-icons",
+       tag: "v3.19.0",
+       sparse: "icons",
+       app: false,
+       compile: false,
+       depth: 1}
     ]
   end
 

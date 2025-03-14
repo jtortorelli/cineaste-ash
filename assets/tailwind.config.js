@@ -6,6 +6,7 @@ const fs = require("fs")
 const path = require("path")
 
 module.exports = {
+  mode: 'jit',
   content: [
     "./js/**/*.js",
     "../lib/cineaste_web.ex",
@@ -15,12 +16,18 @@ module.exports = {
     extend: {
       colors: {
         brand: "#FD4F00",
-      }
+      },
+      fontFamily: {
+        content: ["Petrona", "serif"],
+        display: ["Montserrat", "sans-serif"],
+        mono: ["MapleMono", "monospace"],
+      },
     },
   },
   plugins: [
     require("@tailwindcss/forms"),
     require('daisyui'),
+    require('@tailwindcss/typography'),
     // Allows prefixing tailwind classes with LiveView classes to add rules
     // only when LiveView classes are applied, for example:
     //
@@ -34,7 +41,7 @@ module.exports = {
     // See your `CoreComponents.icon/1` for more information.
     //
     plugin(function ({ matchComponents, theme }) {
-      let iconsDir = path.join(__dirname, "../deps/heroicons/optimized")
+      let iconsDir = path.join(__dirname, "../deps/tabler_icons/icons")
       let values = {}
       let icons = [
         ["", "/24/outline"],
@@ -49,7 +56,7 @@ module.exports = {
         })
       })
       matchComponents({
-        "hero": ({ name, fullPath }) => {
+        tabler: ({ name, fullPath }) => {
           let content = fs.readFileSync(fullPath).toString().replace(/\r?\n|\r/g, "")
           let size = theme("spacing.6")
           if (name.endsWith("-mini")) {
@@ -58,9 +65,9 @@ module.exports = {
             size = theme("spacing.4")
           }
           return {
-            [`--hero-${name}`]: `url('data:image/svg+xml;utf8,${content}')`,
-            "-webkit-mask": `var(--hero-${name})`,
-            "mask": `var(--hero-${name})`,
+            [`--tabler-${name}`]: `url('data:image/svg+xml;utf8,${content}')`,
+            "-webkit-mask": `var(--tabler-${name})`,
+            "mask": `var(--tabler-${name})`,
             "mask-repeat": "no-repeat",
             "background-color": "currentColor",
             "vertical-align": "middle",

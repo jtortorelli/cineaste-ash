@@ -17,7 +17,8 @@ defmodule CineasteWeb.Router do
   scope "/", CineasteWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", IndexLive
+    live "/about", AboutLive
   end
 
   # Other scopes may use custom stacks.

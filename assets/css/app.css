@@ -3,3 +3,51 @@
 @import "tailwindcss/utilities";
 @import "daisyui/theme/caramellatte";
 /* This file is for your main application CSS */
+
+@font-face {
+    font-family: "Petrona";
+    src: url("../fonts/Petrona-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Petrona";
+    src: url("../fonts/Petrona-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../fonts/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-display: swap;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "MapleMono";
+    src: url("../fonts/MapleMono[wght].ttf") format("truetype");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "MapleMono";
+    src: url("../fonts/MapleMono-Italic[wght].ttf") format("truetype");
+    font-weight: 100 200 300 400 500 600 700 800 900;
+    font-display: swap;
+    font-style: italic;
+}
