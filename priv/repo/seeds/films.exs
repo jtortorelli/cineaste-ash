@@ -1,1742 +1,283 @@
-data = [
-  %{
-    slug: "13-assassins-2010",
-    title: "13 Assassins",
-    release_date: ~D(2010-09-25),
-    runtime: 141,
-    showcased: true
-  },
-  %{
-    slug: "20th-century-boys-1-the-beginning-of-the-end-2008",
-    title: "20th Century Boys 1: The Beginning of the End",
-    release_date: ~D(2008-08-30),
-    runtime: 142,
-    showcased: true
-  },
-  %{
-    slug: "20th-century-boys-2-the-last-hope-2009",
-    title: "20th Century Boys 2: The Last Hope",
-    release_date: ~D(2009-01-31),
-    runtime: 139,
-    showcased: true
-  },
-  %{
-    slug: "20th-century-boys-3-redemption-2009",
-    title: "20th Century Boys 3: Redemption",
-    release_date: ~D(2009-08-29),
-    runtime: 155,
-    showcased: true
-  },
-  %{
-    slug: "adventure-of-kigan-castle-1966",
-    title: "The Adventure of Kigan Castle",
-    release_date: ~D(1966-04-28),
-    runtime: 100,
-    showcased: true
-  },
-  %{
-    slug: "adventures-of-zatoichi-1964",
-    title: "Adventures of Zatoichi",
-    release_date: ~D(1964-12-30),
-    runtime: 86,
-    showcased: true
-  },
-  %{
-    slug: "akira-1988",
-    title: "Akira",
-    release_date: ~D(1988-07-16),
-    runtime: 124,
-    showcased: true
-  },
-  %{
-    slug: "alive-2003",
-    title: "Alive",
-    release_date: ~D(2003-06-21),
-    runtime: 150,
-    showcased: true
-  },
-  %{
-    slug: "all-monsters-attack-1969",
-    title: "All Monsters Attack",
-    release_date: ~D(1969-12-20),
-    runtime: 70,
-    showcased: true
-  },
-  %{
-    slug: "all-round-appraiser-q-the-eyes-of-mona-lisa-2014",
-    title: "All-Round Appraiser Q: The Eyes of Mona Lisa",
-    release_date: ~D(2014-05-31),
-    runtime: 119,
-    showcased: true
-  },
-  %{
-    slug: "always-sunset-on-third-street-2005",
-    title: "Always: Sunset on Third Street",
-    release_date: ~D(2005-11-05),
-    runtime: 133,
-    showcased: true
-  },
-  %{
-    slug: "always-sunset-on-third-street-2-2007",
-    title: "Always: Sunset on Third Street 2",
-    release_date: ~D(2007-11-03),
-    runtime: 146,
-    showcased: true
-  },
-  %{
-    slug: "always-sunset-on-third-street-3-2012",
-    title: "Always: Sunset on Third Street 3",
-    release_date: ~D(2012-01-21),
-    runtime: 142,
-    showcased: true
-  },
-  %{
-    slug: "aragami-2003",
-    title: "Aragami",
-    release_date: ~D(2003-03-27),
-    runtime: 78,
-    showcased: true
-  },
-  %{
-    slug: "assassination-classroom-2015",
-    title: "Assassination Classroom",
-    release_date: ~D(2015-03-21),
-    runtime: 110,
-    showcased: true
-  },
-  %{
-    slug: "assassination-classroom-graduation-2016",
-    title: "Assassination Classroom: Graduation",
-    release_date: ~D(2016-03-25),
-    runtime: 117,
-    showcased: true
-  },
-  %{
-    slug: "assault-girls-2009",
-    title: "Assault Girls",
-    release_date: ~D(2009-12-19),
-    runtime: 70,
-    showcased: true
-  },
-  %{
-    slug: "atragon-1963",
-    title: "Atragon",
-    release_date: ~D(1963-12-22),
-    runtime: 94,
-    showcased: true
-  },
-  %{
-    slug: "attack-on-titan-2015",
-    title: "Attack on Titan",
-    release_date: ~D(2015-08-01),
-    runtime: 98,
-    showcased: true
-  },
-  %{
-    slug: "attack-on-titan-end-of-the-world-2015",
-    title: "Attack on Titan: End of the World",
-    release_date: ~D(2015-09-19),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "avalon-2001",
-    title: "Avalon",
-    release_date: ~D(2001-01-20),
-    runtime: 106,
-    showcased: true
-  },
-  %{
-    slug: "azumi-2003",
-    title: "Azumi",
-    release_date: ~D(2003-05-10),
-    runtime: 142,
-    showcased: true
-  },
-  %{
-    slug: "azumi-2-death-or-love-2005",
-    title: "Azumi 2: Death or Love",
-    release_date: ~D(2005-03-12),
-    runtime: 112,
-    showcased: true
-  },
-  %{
-    slug: "ballad-2009",
-    title: "Ballad",
-    release_date: ~D(2009-09-05),
-    runtime: 132,
-    showcased: true
-  },
-  %{
-    slug: "battle-in-outer-space-1959",
-    title: "Battle in Outer Space",
-    release_date: ~D(1959-12-26),
-    runtime: 91,
-    showcased: true
-  },
-  %{
-    slug: "battle-royale-2000",
-    title: "Battle Royale",
-    release_date: ~D(2000-12-16),
-    runtime: 114,
-    showcased: true
-  },
-  %{
-    slug: "battle-royale-ii-requiem-2003",
-    title: "Battle Royale II: Requiem",
-    release_date: ~D(2003-07-05),
-    runtime: 133,
-    showcased: true
-  },
-  %{
-    slug: "bullet-train-1975",
-    title: "The Bullet Train",
-    release_date: ~D(1975-07-05),
-    runtime: 152,
-    showcased: true
-  },
-  %{
-    slug: "casshern-2004",
-    title: "Casshern",
-    release_date: ~D(2004-04-24),
-    runtime: 141,
-    showcased: true
-  },
-  %{
-    slug: "castle-in-the-sky-1986",
-    title: "Castle in the Sky",
-    release_date: ~D(1986-08-02),
-    runtime: 124,
-    showcased: true
-  },
-  %{
-    slug: "conflagration-1975",
-    title: "Conflagration",
-    release_date: ~D(1975-07-12),
-    runtime: 100,
-    showcased: true
-  },
-  %{
-    slug: "crossfire-2000",
-    title: "Crossfire",
-    release_date: ~D(2000-06-10),
-    runtime: 115,
-    showcased: true
-  },
-  %{
-    slug: "daigoro-vs-goliath-1972",
-    title: "Daigoro vs. Goliath",
-    release_date: ~D(1972-12-17),
-    runtime: 85,
-    showcased: true
-  },
-  %{
-    slug: "daimajin-1966",
-    title: "Daimajin",
-    release_date: ~D(1966-04-17),
-    runtime: 84,
-    showcased: true
-  },
-  %{
-    slug: "daredevil-in-the-castle-1961",
-    title: "Daredevil in the Castle",
-    release_date: ~D(1961-01-03),
-    runtime: 95,
-    showcased: true
-  },
-  %{
-    slug: "death-note-2006",
-    title: "Death Note",
-    release_date: ~D(2006-06-17),
-    runtime: 126,
-    showcased: true
-  },
-  %{
-    slug: "death-note-light-up-the-new-world-2016",
-    title: "Death Note: Light Up the New World",
-    release_date: ~D(2016-10-29),
-    runtime: 135,
-    showcased: true
-  },
-  %{
-    slug: "death-note-the-last-name-2006",
-    title: "Death Note: The Last Name",
-    release_date: ~D(2006-11-03),
-    runtime: 140,
-    showcased: true
-  },
-  %{
-    slug: "destroy-all-monsters-1968",
-    title: "Destroy All Monsters",
-    release_date: ~D(1968-08-01),
-    runtime: 89,
-    showcased: true
-  },
-  %{
-    slug: "dogora-1964",
-    title: "Dogora",
-    release_date: ~D(1964-08-11),
-    runtime: 81,
-    showcased: true
-  },
-  %{
-    slug: "dororo-2007",
-    title: "Dororo",
-    release_date: ~D(2007-01-27),
-    runtime: 138,
-    showcased: true
-  },
-  %{
-    slug: "ebirah-horror-of-the-deep-1966",
-    title: "Ebirah, Horror of the Deep",
-    release_date: ~D(1966-12-17),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "eko-eko-azarak-ii-birth-of-the-wizard-1996",
-    title: "Eko Eko Azarak II: Birth of the Wizard",
-    release_date: ~D(1996-04-10),
-    runtime: 83,
-    showcased: true
-  },
-  %{
-    slug: "eko-eko-azarak-iii-misa-the-dark-angel-1998",
-    title: "Eko Eko Azarak III: Misa the Dark Angel",
-    release_date: ~D(1998-01-15),
-    runtime: 95,
-    showcased: true
-  },
-  %{
-    slug: "eko-eko-azarak-wizard-of-darkness-1995",
-    title: "Eko Eko Azarak: Wizard of Darkness",
-    release_date: ~D(1995-04-08),
-    runtime: 80,
-    showcased: true
-  },
-  %{slug: "espy-1974", title: "ESPY", release_date: ~D(1974-12-28), runtime: 94, showcased: true},
-  %{
-    slug: "eternal-zero-2013",
-    title: "The Eternal Zero",
-    release_date: ~D(2013-12-21),
-    runtime: 144,
-    showcased: true
-  },
-  %{
-    slug: "evil-of-dracula-1974",
-    title: "Evil of Dracula",
-    release_date: ~D(1974-07-20),
-    runtime: 83,
-    showcased: true
-  },
-  %{
-    slug: "fight-zatoichi-fight-1964",
-    title: "Fight, Zatoichi, Fight",
-    release_date: ~D(1964-10-17),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "frankenstein-conquers-the-world-1965",
-    title: "Frankenstein Conquers the World",
-    release_date: ~D(1965-08-08),
-    runtime: 94,
-    showcased: true
-  },
-  %{
-    slug: "friends-naki-on-monster-island-2011",
-    title: "Friends: Naki on Monster Island",
-    release_date: ~D(2011-12-17),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "fueled-the-man-they-called-pirate-2016",
-    title: "Fueled: The Man They Called Pirate",
-    release_date: ~D(2016-12-10),
-    runtime: 145,
-    showcased: true
-  },
-  %{
-    slug: "gamera-2-attack-of-legion-1996",
-    title: "Gamera 2: Attack of Legion",
-    release_date: ~D(1996-07-13),
-    runtime: 99,
-    showcased: true
-  },
-  %{
-    slug: "gamera-3-revenge-of-iris-1999",
-    title: "Gamera 3: Revenge of Iris",
-    release_date: ~D(1999-03-06),
-    runtime: 108,
-    showcased: true
-  },
-  %{
-    slug: "gamera-guardian-of-the-universe-1995",
-    title: "Gamera: Guardian of the Universe",
-    release_date: ~D(1995-03-11),
-    runtime: 95,
-    showcased: true
-  },
-  %{
-    slug: "gamera-super-monster-1980",
-    title: "Gamera: Super Monster",
-    release_date: ~D(1980-03-20),
-    runtime: 109,
-    showcased: true
-  },
-  %{
-    slug: "gamera-the-brave-2006",
-    title: "Gamera the Brave",
-    release_date: ~D(2006-04-29),
-    runtime: 96,
-    showcased: true
-  },
-  %{
-    slug: "gamera-the-giant-monster-1965",
-    title: "Gamera, the Giant Monster",
-    release_date: ~D(1965-11-27),
-    runtime: 78,
-    showcased: true
-  },
-  %{
-    slug: "gamera-vs-barugon-1966",
-    title: "Gamera vs. Barugon",
-    release_date: ~D(1966-04-17),
-    runtime: 101,
-    showcased: true
-  },
-  %{
-    slug: "gamera-vs-guiron-1969",
-    title: "Gamera vs. Guiron",
-    release_date: ~D(1969-03-21),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "gamera-vs-gyaos-1967",
-    title: "Gamera vs. Gyaos",
-    release_date: ~D(1967-03-15),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "gamera-vs-jiger-1970",
-    title: "Gamera vs. Jiger",
-    release_date: ~D(1970-03-21),
-    runtime: 83,
-    showcased: true
-  },
-  %{
-    slug: "gamera-vs-viras-1968",
-    title: "Gamera vs. Viras",
-    release_date: ~D(1968-03-20),
-    runtime: 72,
-    showcased: true
-  },
-  %{
-    slug: "gamera-vs-zigra-1971",
-    title: "Gamera vs. Zigra",
-    release_date: ~D(1971-07-17),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "gantz-2011",
-    title: "Gantz",
-    release_date: ~D(2011-01-29),
-    runtime: 130,
-    showcased: true
-  },
-  %{
-    slug: "gantz-perfect-answer-2011",
-    title: "Gantz: Perfect Answer",
-    release_date: ~D(2011-04-23),
-    runtime: 141,
-    showcased: true
-  },
-  %{
-    slug: "gatchaman-2013",
-    title: "Gatchaman",
-    release_date: ~D(2013-08-24),
-    runtime: 113,
-    showcased: true
-  },
-  %{
-    slug: "genghis-khan-to-the-ends-of-the-earth-and-sea-2007",
-    title: "Genghis Khan: To the Ends of the Earth and Sea",
-    release_date: ~D(2007-03-03),
-    runtime: 136,
-    showcased: true
-  },
-  %{
-    slug: "genocide-1968",
-    title: "Genocide",
-    release_date: ~D(1968-11-09),
-    runtime: 84,
-    showcased: true
-  },
-  %{
-    slug: "ghidorah-the-three-headed-monster-1964",
-    title: "Ghidorah, the Three-Headed Monster",
-    release_date: ~D(1964-12-20),
-    runtime: 93,
-    showcased: true
-  },
-  %{
-    slug: "ghost-in-the-shell-1995",
-    title: "Ghost in the Shell",
-    release_date: ~D(1995-11-18),
-    runtime: 85,
-    showcased: true
-  },
-  %{
-    slug: "g-i-samurai-1979",
-    title: "G.I. Samurai",
-    release_date: ~D(1979-12-15),
-    runtime: 139,
-    showcased: true
-  },
-  %{
-    slug: "glorious-team-batista-2008",
-    title: "The Glorious Team Batista",
-    release_date: ~D(2008-02-09),
-    runtime: 118,
-    showcased: true
-  },
-  %{
-    slug: "gods-left-hand-devils-right-hand-2006",
-    title: "God's Left Hand, Devil's Right Hand",
-    release_date: ~D(2006-07-22),
-    runtime: 95,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-1954",
-    title: "Godzilla",
-    release_date: ~D(1954-11-03),
-    runtime: 97,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-2000-millennium-1999",
-    title: "Godzilla 2000: Millennium",
-    release_date: ~D(1999-12-11),
-    runtime: 108,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-against-mechagodzilla-2002",
-    title: "Godzilla Against Mechagodzilla",
-    release_date: ~D(2002-12-14),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-final-wars-2004",
-    title: "Godzilla: Final Wars",
-    release_date: ~D(2004-12-04),
-    runtime: 125,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-mothra-and-king-ghidorah-giant-monsters-all-out-attack-2001",
-    title: "Godzilla, Mothra and King Ghidorah: Giant Monsters All-Out Attack",
-    release_date: ~D(2001-12-15),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-raids-again-1955",
-    title: "Godzilla Raids Again",
-    release_date: ~D(1955-04-24),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-tokyo-sos-2003",
-    title: "Godzilla: Tokyo S.O.S.",
-    release_date: ~D(2003-12-13),
-    runtime: 91,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-biollante-1989",
-    title: "Godzilla vs. Biollante",
-    release_date: ~D(1989-12-16),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-destoroyah-1995",
-    title: "Godzilla vs. Destoroyah",
-    release_date: ~D(1995-12-09),
-    runtime: 103,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-gigan-1972",
-    title: "Godzilla vs. Gigan",
-    release_date: ~D(1972-03-12),
-    runtime: 89,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-hedorah-1971",
-    title: "Godzilla vs. Hedorah",
-    release_date: ~D(1971-07-24),
-    runtime: 85,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-king-ghidorah-1991",
-    title: "Godzilla vs. King Ghidorah",
-    release_date: ~D(1991-12-14),
-    runtime: 103,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-mechagodzilla-1974",
-    title: "Godzilla vs. Mechagodzilla",
-    release_date: ~D(1974-03-21),
-    runtime: 84,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-mechagodzilla-ii-1993",
-    title: "Godzilla vs. Mechagodzilla II",
-    release_date: ~D(1993-12-11),
-    runtime: 108,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-megaguirus-2000",
-    title: "Godzilla vs. Megaguirus",
-    release_date: ~D(2000-12-16),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-megalon-1973",
-    title: "Godzilla vs. Megalon",
-    release_date: ~D(1973-03-17),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-mothra-1992",
-    title: "Godzilla vs. Mothra",
-    release_date: ~D(1992-12-12),
-    runtime: 102,
-    showcased: true
-  },
-  %{
-    slug: "godzilla-vs-spacegodzilla-1994",
-    title: "Godzilla vs. SpaceGodzilla",
-    release_date: ~D(1994-12-10),
-    runtime: 108,
-    showcased: true
-  },
-  %{
-    slug: "goemon-2009",
-    title: "Goemon",
-    release_date: ~D(2009-05-01),
-    runtime: 128,
-    showcased: true
-  },
-  %{
-    slug: "goke-body-snatcher-from-hell-1968",
-    title: "Goke, Body Snatcher from Hell",
-    release_date: ~D(1968-08-14),
-    runtime: 84,
-    showcased: true
-  },
-  %{
-    slug: "golden-bat-1966",
-    title: "The Golden Bat",
-    release_date: ~D(1966-12-21),
-    runtime: 73,
-    showcased: true
-  },
-  %{
-    slug: "gorath-1962",
-    title: "Gorath",
-    release_date: ~D(1962-03-21),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "gunhed-1989",
-    title: "Gunhed",
-    release_date: ~D(1989-07-22),
-    runtime: 100,
-    showcased: true
-  },
-  %{
-    slug: "hara-kiri-death-of-a-samurai-2011",
-    title: "Hara-Kiri: Death of a Samurai",
-    release_date: ~D(2011-10-15),
-    runtime: 126,
-    showcased: true
-  },
-  %{
-    slug: "hidden-fortress-1958",
-    title: "The Hidden Fortress",
-    release_date: ~D(1958-12-28),
-    runtime: 139,
-    showcased: true
-  },
-  %{
-    slug: "hidden-fortress-the-last-princess-2008",
-    title: "Hidden Fortress: The Last Princess",
-    release_date: ~D(2008-05-10),
-    runtime: 118,
-    showcased: true
-  },
-  %{
-    slug: "high-and-low-1963",
-    title: "High and Low",
-    release_date: ~D(1963-03-01),
-    runtime: 143,
-    showcased: true
-  },
-  %{
-    slug: "h-man-1958",
-    title: "The H-Man",
-    release_date: ~D(1959-06-24),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "howls-moving-castle-2004",
-    title: "Howl's Moving Castle",
-    release_date: ~D(2004-11-20),
-    runtime: 119,
-    showcased: true
-  },
-  %{
-    slug: "human-vapor-1960",
-    title: "The Human Vapor",
-    release_date: ~D(1960-12-11),
-    runtime: 91,
-    showcased: true
-  },
-  %{
-    slug: "i-am-a-hero-2016",
-    title: "I Am A Hero",
-    release_date: ~D(2016-04-23),
-    runtime: 127,
-    showcased: true
-  },
-  %{
-    slug: "invasion-of-astro-monster-1965",
-    title: "Invasion of Astro-Monster",
-    release_date: ~D(1965-12-19),
-    runtime: 94,
-    showcased: true
-  },
-  %{
-    slug: "invisible-man-1954",
-    title: "Invisible Man",
-    release_date: ~D(1954-12-29),
-    runtime: 70,
-    showcased: true
-  },
-  %{
-    slug: "jin-roh-the-wolf-brigade-2000",
-    title: "Jin-Roh: The Wolf Brigade",
-    release_date: ~D(2000-06-03),
-    runtime: 98,
-    showcased: true
-  },
-  %{
-    slug: "juvenile-2000",
-    title: "Juvenile",
-    release_date: ~D(2000-07-15),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "k-20-legend-of-the-mask-2008",
-    title: "K-20: Legend of the Mask",
-    release_date: ~D(2008-12-20),
-    runtime: 137,
-    showcased: true
-  },
-  %{
-    slug: "kagemusha-1980",
-    title: "Kagemusha",
-    release_date: ~D(1980-04-26),
-    runtime: 179,
-    showcased: true
-  },
-  %{
-    slug: "kaiji-2009",
-    title: "Kaiji",
-    release_date: ~D(2009-10-10),
-    runtime: 129,
-    showcased: true
-  },
-  %{
-    slug: "kaiji-2-2011",
-    title: "Kaiji 2",
-    release_date: ~D(2011-11-05),
-    runtime: 155,
-    showcased: true
-  },
-  %{
-    slug: "kamen-rider-the-first-2005",
-    title: "Kamen Rider: The First",
-    release_date: ~D(2005-11-05),
-    runtime: 90,
-    showcased: true
-  },
-  %{
-    slug: "kamen-rider-the-next-2007",
-    title: "Kamen Rider: The Next",
-    release_date: ~D(2007-10-27),
-    runtime: 113,
-    showcased: true
-  },
-  %{
-    slug: "kamui-gaiden-2009",
-    title: "Kamui Gaiden",
-    release_date: ~D(2009-09-19),
-    runtime: 120,
-    showcased: true
-  },
-  %{
-    slug: "kikis-delivery-service-1989",
-    title: "Kiki's Delivery Service",
-    release_date: ~D(1989-07-29),
-    runtime: 102,
-    showcased: true
-  },
-  %{
-    slug: "king-kong-escapes-1967",
-    title: "King Kong Escapes",
-    release_date: ~D(1967-07-22),
-    runtime: 104,
-    showcased: true
-  },
-  %{
-    slug: "king-kong-vs-godzilla-1962",
-    title: "King Kong vs. Godzilla",
-    release_date: ~D(1962-08-11),
-    runtime: 97,
-    showcased: true
-  },
-  %{
-    slug: "lake-of-dracula-1971",
-    title: "Lake of Dracula",
-    release_date: ~D(1971-06-16),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "last-war-1961",
-    title: "The Last War",
-    release_date: ~D(1961-10-08),
-    runtime: 110,
-    showcased: true
-  },
-  %{
-    slug: "latitude-zero-1969",
-    title: "Latitude Zero",
-    release_date: ~D(1969-07-26),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "l-change-the-world-2008",
-    title: "L: Change the World",
-    release_date: ~D(2008-02-09),
-    runtime: 129,
-    showcased: true
-  },
-  %{
-    slug: "legend-of-the-eight-samurai-1983",
-    title: "Legend of the Eight Samurai",
-    release_date: ~D(1983-12-10),
-    runtime: 136,
-    showcased: true
-  },
-  %{
-    slug: "library-wars-2013",
-    title: "Library Wars",
-    release_date: ~D(2013-04-27),
-    runtime: 128,
-    showcased: true
-  },
-  %{
-    slug: "library-wars-the-last-mission-2015",
-    title: "Library Wars: The Last Mission",
-    release_date: ~D(2015-10-10),
-    runtime: 120,
-    showcased: true
-  },
-  %{
-    slug: "living-skeleton-1968",
-    title: "The Living Skeleton",
-    release_date: ~D(1968-11-09),
-    runtime: 81,
-    showcased: true
-  },
-  %{
-    slug: "lorelei-the-witch-of-the-pacific-ocean-2005",
-    title: "Lorelei: The Witch of the Pacific Ocean",
-    release_date: ~D(2005-03-05),
-    runtime: 128,
-    showcased: true
-  },
-  %{
-    slug: "lost-world-of-sinbad-1963",
-    title: "The Lost World of Sinbad",
-    release_date: ~D(1963-10-26),
-    runtime: 97,
-    showcased: true
-  },
-  %{
-    slug: "lovedeath-2007",
-    title: "LoveDeath",
-    release_date: ~D(2007-05-12),
-    runtime: 158,
-    showcased: true
-  },
-  %{
-    slug: "lupin-iii-the-castle-of-cagliostro-1979",
-    title: "Lupin III: The Castle of Cagliostro",
-    release_date: ~D(1979-12-15),
-    runtime: 100,
-    showcased: true
-  },
-  %{
-    slug: "lupin-the-3rd-2014",
-    title: "Lupin the 3rd",
-    release_date: ~D(2014-08-30),
-    runtime: 133,
-    showcased: true
-  },
-  %{
-    slug: "magic-serpent-1966",
-    title: "The Magic Serpent",
-    release_date: ~D(1966-12-21),
-    runtime: 94,
-    showcased: true
-  },
-  %{
-    slug: "magnitude-7-9-1980",
-    title: "Magnitude 7.9",
-    release_date: ~D(1980-08-30),
-    runtime: 126,
-    showcased: true
-  },
-  %{
-    slug: "matango-1963",
-    title: "Matango",
-    release_date: ~D(1963-08-11),
-    runtime: 89,
-    showcased: true
-  },
-  %{
-    slug: "mechanical-violator-hakaider-1995",
-    title: "Mechanical Violator Hakaider",
-    release_date: ~D(1995-04-15),
-    runtime: 52,
-    showcased: true
-  },
-  %{
-    slug: "message-from-space-1978",
-    title: "Message from Space",
-    release_date: ~D(1978-04-29),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "moon-over-tao-1997",
-    title: "Moon Over Tao",
-    release_date: ~D(1997-11-29),
-    runtime: 96,
-    showcased: true
-  },
-  %{
-    slug: "mothra-1961",
-    title: "Mothra",
-    release_date: ~D(1961-07-30),
-    runtime: 101,
-    showcased: true
-  },
-  %{
-    slug: "mothra-vs-godzilla-1964",
-    title: "Mothra vs. Godzilla",
-    release_date: ~D(1964-04-29),
-    runtime: 89,
-    showcased: true
-  },
-  %{
-    slug: "mushi-shi-2007",
-    title: "Mushi-shi",
-    release_date: ~D(2007-03-24),
-    runtime: 131,
-    showcased: true
-  },
-  %{
-    slug: "my-neighbor-totoro-1988",
-    title: "My Neighbor Totoro",
-    release_date: ~D(1988-04-16),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "mysterians-1957",
-    title: "The Mysterians",
-    release_date: ~D(1957-12-28),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "nausicaa-of-the-valley-of-the-wind-1984",
-    title: "Nausicaä of the Valley of the Wind",
-    release_date: ~D(1984-03-11),
-    runtime: 116,
-    showcased: true
-  },
-  %{
-    slug: "new-tale-of-zatoichi-1963",
-    title: "New Tale of Zatoichi",
-    release_date: ~D(1963-03-15),
-    runtime: 91,
-    showcased: true
-  },
-  %{
-    slug: "oblivion-island-haruka-and-the-magic-mirror-2009",
-    title: "Oblivion Island: Haruka and the Magic Mirror",
-    release_date: ~D(2009-08-22),
-    runtime: 93,
-    showcased: true
-  },
-  %{
-    slug: "one-missed-call-2003",
-    title: "One Missed Call",
-    release_date: ~D(2003-11-03),
-    runtime: 112,
-    showcased: true
-  },
-  %{
-    slug: "one-missed-call-2-2005",
-    title: "One Missed Call 2",
-    release_date: ~D(2005-02-05),
-    runtime: 106,
-    showcased: true
-  },
-  %{
-    slug: "one-missed-call-final-2006",
-    title: "One Missed Call: Final",
-    release_date: ~D(2006-06-24),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "onmyoji-2001",
-    title: "Onmyoji",
-    release_date: ~D(2001-10-06),
-    runtime: 116,
-    showcased: true
-  },
-  %{
-    slug: "onmyoji-ii-2003",
-    title: "Onmyoji II",
-    release_date: ~D(2003-10-04),
-    runtime: 115,
-    showcased: true
-  },
-  %{
-    slug: "orochi-the-eight-headed-dragon-1994",
-    title: "Orochi, the Eight-Headed Dragon",
-    release_date: ~D(1994-07-09),
-    runtime: 103,
-    showcased: true
-  },
-  %{
-    slug: "parasite-eve-1997",
-    title: "Parasite Eve",
-    release_date: ~D(1997-02-01),
-    runtime: 120,
-    showcased: true
-  },
-  %{
-    slug: "parasyte-part-1-2014",
-    title: "Parasyte: Part 1",
-    release_date: ~D(2014-11-29),
-    runtime: 109,
-    showcased: true
-  },
-  %{
-    slug: "parasyte-part-2-2015",
-    title: "Parasyte: Part 2",
-    release_date: ~D(2015-04-25),
-    runtime: 117,
-    showcased: true
-  },
-  %{
-    slug: "patlabor-2-the-movie-1993",
-    title: "Patlabor 2: The Movie",
-    release_date: ~D(1993-08-07),
-    runtime: 113,
-    showcased: true
-  },
-  %{
-    slug: "patlabor-the-movie-1989",
-    title: "Patlabor: The Movie",
-    release_date: ~D(1989-07-15),
-    runtime: 100,
-    showcased: true
-  },
-  %{
-    slug: "platinum-data-2013",
-    title: "Platinum Data",
-    release_date: ~D(2013-03-16),
-    runtime: 133,
-    showcased: true
-  },
-  %{
-    slug: "ponyo-2008",
-    title: "Ponyo",
-    release_date: ~D(2008-07-19),
-    runtime: 101,
-    showcased: true
-  },
-  %{
-    slug: "porco-rosso-1992",
-    title: "Porco Rosso",
-    release_date: ~D(1992-07-18),
-    runtime: 93,
-    showcased: true
-  },
-  %{
-    slug: "princess-blade-2001",
-    title: "The Princess Blade",
-    release_date: ~D(2001-12-15),
-    runtime: 93,
-    showcased: true
-  },
-  %{
-    slug: "princess-mononoke-1997",
-    title: "Princess Mononoke",
-    release_date: ~D(1997-07-12),
-    runtime: 133,
-    showcased: true
-  },
-  %{
-    slug: "prophecies-of-nostradamus-1974",
-    title: "Prophecies of Nostradamus",
-    release_date: ~D(1974-08-03),
-    runtime: 114,
-    showcased: true
-  },
-  %{
-    slug: "rashomon-1950",
-    title: "Rashomon",
-    release_date: ~D(1950-08-26),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "rebirth-of-mothra-1996",
-    title: "Rebirth of Mothra",
-    release_date: ~D(1996-12-14),
-    runtime: 106,
-    showcased: true
-  },
-  %{
-    slug: "rebirth-of-mothra-ii-1997",
-    title: "Rebirth of Mothra II",
-    release_date: ~D(1997-12-13),
-    runtime: 100,
-    showcased: true
-  },
-  %{
-    slug: "rebirth-of-mothra-iii-1998",
-    title: "Rebirth of Mothra III",
-    release_date: ~D(1998-12-12),
-    runtime: 100,
-    showcased: true
-  },
-  %{
-    slug: "red-spectacles-1987",
-    title: "The Red Spectacles",
-    release_date: ~D(1987-02-07),
-    runtime: 116,
-    showcased: true
-  },
-  %{
-    slug: "rescue-wings-2008",
-    title: "Rescue Wings",
-    release_date: ~D(2008-12-13),
-    runtime: 108,
-    showcased: true
-  },
-  %{
-    slug: "returner-2002",
-    title: "Returner",
-    release_date: ~D(2002-08-31),
-    runtime: 116,
-    showcased: true
-  },
-  %{
-    slug: "return-of-daimajin-1966",
-    title: "Return of Daimajin",
-    release_date: ~D(1966-08-13),
-    runtime: 79,
-    showcased: true
-  },
-  %{
-    slug: "return-of-godzilla-1984",
-    title: "The Return of Godzilla",
-    release_date: ~D(1985-12-15),
-    runtime: 103,
-    showcased: true
-  },
-  %{slug: "ring-1998", title: "Ring", release_date: ~D(1998-01-31), runtime: 95, showcased: true},
-  %{
-    slug: "ring-0-birthday-2000",
-    title: "Ring 0: Birthday",
-    release_date: ~D(2000-01-22),
-    runtime: 99,
-    showcased: true
-  },
-  %{
-    slug: "ring-2-1999",
-    title: "Ring 2",
-    release_date: ~D(1999-01-23),
-    runtime: 95,
-    showcased: true
-  },
-  %{
-    slug: "rodan-1956",
-    title: "Rodan",
-    release_date: ~D(1956-12-26),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "rurouni-kenshin-2012",
-    title: "Rurouni Kenshin",
-    release_date: ~D(2012-08-25),
-    runtime: 134,
-    showcased: true
-  },
-  %{
-    slug: "rurouni-kenshin-kyoto-inferno-2014",
-    title: "Rurouni Kenshin: Kyoto Inferno",
-    release_date: ~D(2014-08-01),
-    runtime: 139,
-    showcased: true
-  },
-  %{
-    slug: "rurouni-kenshin-the-legend-ends-2014",
-    title: "Rurouni Kenshin: The Legend Ends",
-    release_date: ~D(2014-09-13),
-    runtime: 135,
-    showcased: true
-  },
-  %{
-    slug: "sakuya-slayer-of-demons-2000",
-    title: "Sakuya: Slayer of Demons",
-    release_date: ~D(2000-08-12),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "samaritan-zatoichi-1968",
-    title: "Samaritan Zatoichi",
-    release_date: ~D(1968-12-28),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "samurai-i-musashi-miyamoto-1954",
-    title: "Samurai I: Musashi Miyamoto",
-    release_date: ~D(1954-09-26),
-    runtime: 94,
-    showcased: true
-  },
-  %{
-    slug: "samurai-ii-duel-at-ichijoji-temple-1955",
-    title: "Samurai II: Duel at Ichijoji Temple",
-    release_date: ~D(1955-07-12),
-    runtime: 103,
-    showcased: true
-  },
-  %{
-    slug: "samurai-iii-duel-at-ganryu-island-1956",
-    title: "Samurai III: Duel at Ganryu Island",
-    release_date: ~D(1956-01-03),
-    runtime: 104,
-    showcased: true
-  },
-  %{
-    slug: "samurai-commando-mission-1549-2005",
-    title: "Samurai Commando: Mission 1549",
-    release_date: ~D(2005-06-11),
-    runtime: 120,
-    showcased: true
-  },
-  %{
-    slug: "samurai-reincarnation-1981",
-    title: "Samurai Reincarnation",
-    release_date: ~D(1981-06-06),
-    runtime: 122,
-    showcased: true
-  },
-  %{
-    slug: "sanjuro-1962",
-    title: "Sanjuro",
-    release_date: ~D(1962-01-01),
-    runtime: 96,
-    showcased: true
-  },
-  %{
-    slug: "sayonara-jupiter-1984",
-    title: "Sayonara Jupiter",
-    release_date: ~D(1984-03-17),
-    runtime: 129,
-    showcased: true
-  },
-  %{
-    slug: "secret-of-the-telegian-1960",
-    title: "The Secret of the Telegian",
-    release_date: ~D(1960-04-10),
-    runtime: 85,
-    showcased: true
-  },
-  %{
-    slug: "seven-samurai-1954",
-    title: "Seven Samurai",
-    release_date: ~D(1954-04-26),
-    runtime: 207,
-    showcased: true
-  },
-  %{
-    slug: "shin-godzilla-2016",
-    title: "Shin Godzilla",
-    release_date: ~D(2016-07-29),
-    runtime: 119,
-    showcased: true
-  },
-  %{
-    slug: "shinobi-heart-under-blade-2005",
-    title: "Shinobi: Heart Under Blade",
-    release_date: ~D(2005-09-17),
-    runtime: 101,
-    showcased: true
-  },
-  %{
-    slug: "sinking-of-japan-2006",
-    title: "The Sinking of Japan",
-    release_date: ~D(2006-07-15),
-    runtime: 135,
-    showcased: true
-  },
-  %{
-    slug: "sky-crawlers-2008",
-    title: "The Sky Crawlers",
-    release_date: ~D(2008-08-02),
-    runtime: 122,
-    showcased: true
-  },
-  %{
-    slug: "sky-high-2003",
-    title: "Sky High",
-    release_date: ~D(2003-11-08),
-    runtime: 123,
-    showcased: true
-  },
-  %{
-    slug: "son-of-godzilla-1967",
-    title: "Son of Godzilla",
-    release_date: ~D(1967-12-16),
-    runtime: 86,
-    showcased: true
-  },
-  %{
-    slug: "space-amoeba-1970",
-    title: "Space Amoeba",
-    release_date: ~D(1970-08-01),
-    runtime: 84,
-    showcased: true
-  },
-  %{
-    slug: "space-battleship-yamato-2010",
-    title: "Space Battleship Yamato",
-    release_date: ~D(2010-12-01),
-    runtime: 138,
-    showcased: true
-  },
-  %{
-    slug: "spiral-1998",
-    title: "Spiral",
-    release_date: ~D(1998-01-31),
-    runtime: 97,
-    showcased: true
-  },
-  %{
-    slug: "spirited-away-2001",
-    title: "Spirited Away",
-    release_date: ~D(2001-07-20),
-    runtime: 124,
-    showcased: true
-  },
-  %{
-    slug: "stand-by-me-doraemon-2014",
-    title: "Stand By Me, Doraemon",
-    release_date: ~D(2014-08-08),
-    runtime: 95,
-    showcased: true
-  },
-  %{
-    slug: "stray-dog-kerberos-panzer-cops-1991",
-    title: "Stray Dog: Kerberos Panzer Cops",
-    release_date: ~D(1991-03-23),
-    runtime: 99,
-    showcased: true
-  },
-  %{
-    slug: "submersion-of-japan-1973",
-    title: "Submersion of Japan",
-    release_date: ~D(1973-12-29),
-    runtime: 140,
-    showcased: true
-  },
-  %{
-    slug: "sword-of-alexander-2007",
-    title: "The Sword of Alexander",
-    release_date: ~D(2007-04-07),
-    runtime: 110,
-    showcased: true
-  },
-  %{
-    slug: "tale-of-zatoichi-1962",
-    title: "The Tale of Zatoichi",
-    release_date: ~D(1962-04-18),
-    runtime: 96,
-    showcased: true
-  },
-  %{
-    slug: "tale-of-zatoichi-continues-1962",
-    title: "The Tale of Zatoichi Continues",
-    release_date: ~D(1962-10-12),
-    runtime: 73,
-    showcased: true
-  },
-  %{
-    slug: "talking-head-1992",
-    title: "Talking Head",
-    release_date: ~D(1992-10-10),
-    runtime: 105,
-    showcased: true
-  },
-  %{
-    slug: "terror-of-mechagodzilla-1975",
-    title: "Terror of Mechagodzilla",
-    release_date: ~D(1975-03-15),
-    runtime: 83,
-    showcased: true
-  },
-  %{
-    slug: "tetsujin-28-2005",
-    title: "Tetsujin-28",
-    release_date: ~D(2005-03-19),
-    runtime: 114,
-    showcased: true
-  },
-  %{
-    slug: "three-outlaw-samurai-1964",
-    title: "Three Outlaw Samurai",
-    release_date: ~D(1964-05-13),
-    runtime: 94,
-    showcased: true
-  },
-  %{
-    slug: "three-treasures-1959",
-    title: "The Three Treasures",
-    release_date: ~D(1959-10-25),
-    runtime: 182,
-    showcased: true
-  },
-  %{
-    slug: "throne-of-blood-1957",
-    title: "Throne of Blood",
-    release_date: ~D(1957-01-15),
-    runtime: 110,
-    showcased: true
-  },
-  %{
-    slug: "tokyo-blackout-1987",
-    title: "Tokyo Blackout",
-    release_date: ~D(1987-01-17),
-    runtime: 120,
-    showcased: true
-  },
-  %{
-    slug: "top-secret-murder-in-mind-2016",
-    title: "The Top Secret: Murder in Mind",
-    release_date: ~D(2016-08-06),
-    runtime: 148,
-    showcased: true
-  },
-  %{
-    slug: "triumphant-return-of-general-rouge-2009",
-    title: "The Triumphant Return of General Rouge",
-    release_date: ~D(2009-03-07),
-    runtime: 123,
-    showcased: true
-  },
-  %{
-    slug: "tsubaki-sanjuro-2007",
-    title: "Tsubaki Sanjuro",
-    release_date: ~D(2007-12-01),
-    runtime: 119,
-    showcased: true
-  },
-  %{
-    slug: "ultraman-the-next-2004",
-    title: "Ultraman: The Next",
-    release_date: ~D(2004-12-18),
-    runtime: 97,
-    showcased: true
-  },
-  %{
-    slug: "vampire-doll-1970",
-    title: "The Vampire Doll",
-    release_date: ~D(1971-07-04),
-    runtime: 71,
-    showcased: true
-  },
-  %{
-    slug: "varan-the-unbelievable-1958",
-    title: "Varan the Unbelievable",
-    release_date: ~D(1958-10-14),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "versus-2000",
-    title: "Versus",
-    release_date: ~D(2000-09-08),
-    runtime: 119,
-    showcased: true
-  },
-  %{
-    slug: "war-in-space-1977",
-    title: "The War in Space",
-    release_date: ~D(1977-12-17),
-    runtime: 91,
-    showcased: true
-  },
-  %{
-    slug: "warning-from-space-1956",
-    title: "Warning from Space",
-    release_date: ~D(1956-01-29),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "war-of-the-gargantuas-1966",
-    title: "War of the Gargantuas",
-    release_date: ~D(1966-07-31),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "whirlwind-1964",
-    title: "Whirlwind",
-    release_date: ~D(1964-01-03),
-    runtime: 106,
-    showcased: true
-  },
-  %{
-    slug: "wind-rises-2013",
-    title: "The Wind Rises",
-    release_date: ~D(2013-07-20),
-    runtime: 126,
-    showcased: true
-  },
-  %{
-    slug: "wrath-of-daimajin-1966",
-    title: "Wrath of Daimajin",
-    release_date: ~D(1966-12-10),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "x-from-outer-space-1967",
-    title: "The X from Outer Space",
-    release_date: ~D(1967-03-25),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "yojimbo-1961",
-    title: "Yojimbo",
-    release_date: ~D(1961-04-25),
-    runtime: 110,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-1989",
-    title: "Zatoichi",
-    release_date: ~D(1989-02-04),
-    runtime: 116,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-and-the-chess-expert-1965",
-    title: "Zatoichi and the Chess Expert",
-    release_date: ~D(1965-12-24),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-and-the-chest-of-gold-1964",
-    title: "Zatoichi and the Chest of Gold",
-    release_date: ~D(1964-03-14),
-    runtime: 83,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-and-the-doomed-man-1965",
-    title: "Zatoichi and the Doomed Man",
-    release_date: ~D(1965-09-18),
-    runtime: 78,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-and-the-fugitives-1968",
-    title: "Zatoichi and the Fugitives",
-    release_date: ~D(1968-08-10),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-at-large-1972",
-    title: "Zatoichi at Large",
-    release_date: ~D(1972-01-15),
-    runtime: 90,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-challenged-1967",
-    title: "Zatoichi Challenged",
-    release_date: ~D(1967-12-30),
-    runtime: 87,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-goes-to-the-fire-festival-1970",
-    title: "Zatoichi Goes to the Fire Festival",
-    release_date: ~D(1970-08-12),
-    runtime: 96,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-in-desperation-1972",
-    title: "Zatoichi in Desperation",
-    release_date: ~D(1972-09-02),
-    runtime: 95,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-meets-the-one-armed-swordsman-1971",
-    title: "Zatoichi Meets the One-Armed Swordsman",
-    release_date: ~D(1971-01-13),
-    runtime: 94,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-meets-yojimbo-1970",
-    title: "Zatoichi Meets Yojimbo",
-    release_date: ~D(1970-01-15),
-    runtime: 115,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-on-the-road-1963",
-    title: "Zatoichi on the Road",
-    release_date: ~D(1963-11-30),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "zatoichis-cane-sword-1967",
-    title: "Zatoichi's Cane Sword",
-    release_date: ~D(1967-01-03),
-    runtime: 93,
-    showcased: true
-  },
-  %{
-    slug: "zatoichis-conspiracy-1973",
-    title: "Zatoichi's Conspiracy",
-    release_date: ~D(1973-04-21),
-    runtime: 88,
-    showcased: true
-  },
-  %{
-    slug: "zatoichis-flashing-sword-1964",
-    title: "Zatoichi's Flashing Sword",
-    release_date: ~D(1964-07-11),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "zatoichis-pilgrimage-1966",
-    title: "Zatoichi's Pilgrimage",
-    release_date: ~D(1966-08-13),
-    runtime: 82,
-    showcased: true
-  },
-  %{
-    slug: "zatoichis-revenge-1965",
-    title: "Zatoichi's Revenge",
-    release_date: ~D(1965-04-03),
-    runtime: 84,
-    showcased: true
-  },
-  %{
-    slug: "zatoichis-vengeance-1966",
-    title: "Zatoichi's Vengeance",
-    release_date: ~D(1966-05-03),
-    runtime: 83,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-the-fugitive-1963",
-    title: "Zatoichi the Fugitive",
-    release_date: ~D(1963-08-10),
-    runtime: 86,
-    showcased: true
-  },
-  %{
-    slug: "zatoichi-the-outlaw-1967",
-    title: "Zatoichi the Outlaw",
-    release_date: ~D(1967-08-12),
-    runtime: 96,
-    showcased: true
-  },
-  %{
-    slug: "zeiram-1991",
-    title: "Zëiram",
-    release_date: ~D(1991-12-21),
-    runtime: 97,
-    showcased: true
-  },
-  %{
-    slug: "zeiram-2-1994",
-    title: "Zëiram 2",
-    release_date: ~D(1994-12-17),
-    runtime: 100,
-    showcased: true
-  }
-]
+alias NimbleCSV.RFC4180, as: CSV
 
-data |> Ash.bulk_create!(Cineaste.Library.Film, :create, return_errors?: true)
+csv = """
+座頭市喧嘩太鼓,Zatôichi Fighting Drum,Zatôichi Kenkadaiko,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/samaritan-zatoichi-1968/posters/samaritan-zatoichi-1968.jpg,samaritan-zatoichi-1968,Samaritan Zatoichi,1968-12-28,82,true
+クロスファイア,Crossfire,Kurosufaia,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/crossfire-2000/posters/crossfire-2000.jpg,crossfire-2000,Crossfire,2000-06-10,115,true
+新幹線大爆破,Bullet Train Great Explosion,Shinkansen Daibakuha,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/bullet-train-1975/posters/bullet-train-1975.jpg,bullet-train-1975,The Bullet Train,1975-07-05,152,true
+天空の城ラピュタ,Castle Laputa in the Sky,Tenkû No Shiro Rapyuta,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/castle-in-the-sky-1986/posters/castle-in-the-sky-1986.jpg,castle-in-the-sky-1986,Castle in the Sky,1986-08-02,124,true
+隠し砦の三悪人 THE LAST PRINCESS,Three Villains of the Hidden Fortress The Last Princess,Kakushi Toride No San Akunin The Last Princess,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/hidden-fortress-the-last-princess-2008/posters/hidden-fortress-the-last-princess-2008.jpg,hidden-fortress-the-last-princess-2008,Hidden Fortress: The Last Princess,2008-05-10,118,true
+十三人の刺客,13 Assassins,Jûsan'nin No Shikaku,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/13-assassins-2010/posters/13-assassins-2010.jpg,13-assassins-2010,13 Assassins,2010-09-25,141,true
+暗殺教室〜卒業編〜,Assassination Classroom Graduation,Ansatsu Kyôshitsu Sotsugyô-hen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/assassination-classroom-graduation-2016/posters/assassination-classroom-graduation-2016.jpg,assassination-classroom-graduation-2016,Assassination Classroom: Graduation,2016-03-25,117,true
+どろろ,Dororo,Dororo,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/dororo-2007/posters/dororo-2007.jpg,dororo-2007,Dororo,2007-01-27,138,true
+あずみ,Azumi,Azumi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/azumi-2003/posters/azumi-2003.jpg,azumi-2003,Azumi,2003-05-10,142,true
+大魔神,Daimajin,Daimajin,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/daimajin-1966/posters/daimajin-1966.jpg,daimajin-1966,Daimajin,1966-04-17,84,true
+アヴァロン,Avalon,Avaron,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/avalon-2001/posters/avalon-2001.jpg,avalon-2001,Avalon,2001-01-20,106,true
+ゴジラvsビオランテ,Godzilla vs Biollante,Gojira vs Biorante,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-biollante-1989/posters/godzilla-vs-biollante-1989.jpg,godzilla-vs-biollante-1989,Godzilla vs. Biollante,1989-12-16,105,true
+隠し砦の三悪人,Three Villains of the Hidden Fortress,Kakushi Toride No San Akunin,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/hidden-fortress-1958/posters/hidden-fortress-1958.jpg,hidden-fortress-1958,The Hidden Fortress,1958-12-28,139,true
+座頭市あばれ凧,Zatôichi Wild Kite,Zatôichi Abaredako,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichis-flashing-sword-1964/posters/zatoichis-flashing-sword-1964.jpg,zatoichis-flashing-sword-1964,Zatoichi's Flashing Sword,1964-07-11,82,true
+GANTZ PERFECT ANSWER,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gantz-perfect-answer-2011/posters/gantz-perfect-answer-2011.jpg,gantz-perfect-answer-2011,Gantz: Perfect Answer,2011-04-23,141,true
+CASSHERN,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/casshern-2004/posters/casshern-2004.jpg,casshern-2004,Casshern,2004-04-24,141,true
+暗殺教室,Assassination Classroom,Ansatsu Kyôshitsu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/assassination-classroom-2015/posters/assassination-classroom-2015.jpg,assassination-classroom-2015,Assassination Classroom,2015-03-21,110,true
+ガメラ対深海怪獣ジグラ,Gamera vs. Deep Sea Monster Zigra,Gamera Tai Shinkai Kaijû Jigura,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-vs-zigra-1971/posters/gamera-vs-zigra-1971.jpg,gamera-vs-zigra-1971,Gamera vs. Zigra,1971-07-17,88,true
+地球攻撃命令 ゴジラ対ガイガン,Earth Attack Order Godzilla vs. Gigan,Chikyû Kôgeki Meirei Gojira Tai Gaigan,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-gigan-1972/posters/godzilla-vs-gigan-1972.jpg,godzilla-vs-gigan-1972,Godzilla vs. Gigan,1972-03-12,89,true
+美女と液体人間,Beauty and Liquid Man,Bijo To Ekitainingen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/h-man-1958/posters/h-man-1958.jpg,h-man-1958,The H-Man,1959-06-24,87,true
+ガメラ対大魔獣ジャイガー,Gamera vs. Giant Demon Beast Jiger,Gamera Tai Daimajû Jaigâ,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-vs-jiger-1970/posters/gamera-vs-jiger-1970.jpg,gamera-vs-jiger-1970,Gamera vs. Jiger,1970-03-21,83,true
+大盗賊,Great Bandit,Daitôzoku,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/lost-world-of-sinbad-1963/posters/samurai-pirate-1963.jpg,lost-world-of-sinbad-1963,The Lost World of Sinbad,1963-10-26,97,true
+LOVEDEATH ラブデス,Lovedeath Lovedeath,Lovedeath Rabudesu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/lovedeath-2007/posters/lovedeath-2007.jpg,lovedeath-2007,LoveDeath,2007-05-12,158,true
+怪獣大奮戦 ダイゴロウ対ゴリアス,Monster Great Battle Daigoro vs. Goliath,Kaijû Daifunsen Daigorô Tai Goriasu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/daigoro-vs-goliath-1972/posters/daigoro-vs-goliath-1972.jpg,daigoro-vs-goliath-1972,Daigoro vs. Goliath,1972-12-17,85,true
+緯度<ruby>0<rt>ゼロ</rt></ruby>大作戦,Latitude 0 Great Operation,Ido Zero Daisakusen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/latitude-zero-1969/posters/latitude-zero-1969.jpg,latitude-zero-1969,Latitude Zero,1969-07-26,105,true
+透明人間,Invisible Man,Tômei Ningen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/invisible-man-1954/posters/invisible-man-1954.jpg,invisible-man-1954,Invisible Man,1954-12-29,70,true
+図書館戦争,Library War,Toshokan Sensô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/library-wars-2013/posters/library-wars-2013.jpg,library-wars-2013,Library Wars,2013-04-27,128,true
+戦国自衛隊1549,Sengoku Self Defense Force 1549,Sengoku Jieitai 1549,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/samurai-commando-mission-1549-2005/posters/samurai-commando-mission-1549-2005.jpg,samurai-commando-mission-1549-2005,Samurai Commando: Mission 1549,2005-06-11,120,true
+ガス人間㐧1号,Gas Man No. 1,Gasu Ningen Dai Ichi-gô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/human-vapor-1960/posters/human-vapor-1960.jpg,human-vapor-1960,The Human Vapor,1960-12-11,91,true
+本格科学冒険映画 20世紀少年 最終章 ぼくらの旗,Real Science Adventure Movie 20th Century Boys Final Chapter Our Flag,Honkaku Kagaku Bôken Eiga Nijû Seiki Shônen Saishû-Shô Boku-ra No Hata,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/20th-century-boys-3-redemption-2009/posters/20th-century-boys-redemption-2009.jpg,20th-century-boys-3-redemption-2009,20th Century Boys 3: Redemption,2009-08-29,155,true
+天国と地獄,Heaven and Hell,Tengoku to Jigoku,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/high-and-low-1963/posters/high-and-low-1963.jpg,high-and-low-1963,High and Low,1963-03-01,143,true
+空へ-救いの翼 RESCUE WINGS-,To the Sky -Rescue Wings-,Sora e -Sukui No Tsubasa Rescue Wings-,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rescue-wings-2008/posters/rescue-wings-2008.jpg,rescue-wings-2008,Rescue Wings,2008-12-13,108,true
+羅生門,Rashômon,Rashômon,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rashomon-1950/posters/rashomon-1950.jpg,rashomon-1950,Rashomon,1950-08-26,88,true
+もののけ姫,Princess Mononoke,Mononoke Hime,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/princess-mononoke-1997/posters/princess-mononoke-1997.jpg,princess-mononoke-1997,Princess Mononoke,1997-07-12,133,true
+ゴジラ,Godzilla,Gojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/return-of-godzilla-1984/posters/return-of-godzilla-1984.jpg,return-of-godzilla-1984,The Return of Godzilla,1985-12-15,103,true
+リターナー,Returner,Ritânâ,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/returner-2002/posters/returner-2002.jpg,returner-2002,Returner,2002-08-31,116,true
+ガメラ2 レギオン襲来,Gamera 2 Legion Attack,Gamera 2 Region Shûrai,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-2-attack-of-legion-1996/posters/gamera-2-advent-of-legion-1996.jpg,gamera-2-attack-of-legion-1996,Gamera 2: Attack of Legion,1996-07-13,99,true
+地球防衛軍,Earth Defense Force,Chikyû Bôeigun,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/mysterians-1957/posters/mysterians-1957.jpg,mysterians-1957,The Mysterians,1957-12-28,88,true
+BALLAD 名もなき恋のうた,Ballad Nameless Love Song,Ballad Namonaki Koi No Uta,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ballad-2009/posters/ballad-2009.jpg,ballad-2009,Ballad,2009-09-05,132,true
+蟲師,Mushi-shi,Mushi-shi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/mushi-shi-2007/posters/mushi-shi-2007.jpg,mushi-shi-2007,Mushi-shi,2007-03-24,131,true
+椿三十郎,Tsubaki Sanjuro,Tsubaki Sanjûrô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/sanjuro-1962/posters/sanjuro-1962.jpg,sanjuro-1962,Sanjuro,1962-01-01,96,true
+座頭市,Zatôichi,Zatôichi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-1989/posters/zatoichi-1989.jpg,zatoichi-1989,Zatoichi,1989-02-04,116,true
+ジュブナイル,Juvenile,Jubunairu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/juvenile-2000/posters/juvenile-2000.jpg,juvenile-2000,Juvenile,2000-07-15,105,true
+トーキング・ヘッド,Talking Head,Tôkingu Heddo,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/talking-head-1992/posters/talking-head-1992.jpg,talking-head-1992,Talking Head,1992-10-10,105,true
+新座頭市物語 折れた杖,New Zatôichi Story Broken Cane,Shin Zatôichi Monogatari Oreta Tsue,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-in-desperation-1972/posters/zatoichi-in-desperation-1972.jpg,zatoichi-in-desperation-1972,Zatoichi in Desperation,1972-09-02,95,true
+宇宙人東京に現わる,Aliens Appear in Tokyo,Uchûjin Tôkyô Ni Arawaru,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/warning-from-space-1956/posters/warning-from-space-1956.jpg,warning-from-space-1956,Warning from Space,1956-01-29,82,true
+フランケンシュタインの怪獣 サンダ対ガイラ,Frankenstein's Monsters Sanda vs. Gaira,Furankenshutain No Kaijû Sanda Tai Gaira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/war-of-the-gargantuas-1966/posters/war-of-the-gargantuas-1966.jpg,war-of-the-gargantuas-1966,War of the Gargantuas,1966-07-31,88,true
+風立ちぬ,Wind Rises,Kaze Tachinu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/wind-rises-2013/posters/wind-rises-2013.jpg,wind-rises-2013,The Wind Rises,2013-07-20,126,true
+用心棒,Bodyguard,Yôjinbô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/yojimbo-1961/posters/yojimbo-1961.jpg,yojimbo-1961,Yojimbo,1961-04-25,110,true
+怪獣総進撃,Monster All-Out Attack,Kaijû Sôshingeki,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/destroy-all-monsters-1968/posters/destroy-all-monsters-1968.jpg,destroy-all-monsters-1968,Destroy All Monsters,1968-08-01,89,true
+大帝の剣,Sword of the Great Emperor,Taitei No Ken,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/sword-of-alexander-2007/posters/sword-of-alexander-2007.jpg,sword-of-alexander-2007,The Sword of Alexander,2007-04-07,110,true
+アキラ,Akira,Akira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/akira-1988/posters/akira-1988.jpg,akira-1988,Akira,1988-07-16,124,true
+座頭市と用心棒,Zatôichi and Yojimbo,Zatôichi To Yôjinbô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-meets-yojimbo-1970/posters/zatoichi-meets-yojimbo-1970.jpg,zatoichi-meets-yojimbo-1970,Zatoichi Meets Yojimbo,1970-01-15,115,true
+本格科学冒険映画 20世紀少年 第1章 終わりの始まり,Real Science Adventure Movie 20th Century Boys Chapter 1 The Beginning of the End,Honkaku Kagaku Bôken Eiga Nijû Seiki Shônen Dai Ichi-Shô Owari No Hajimari,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/20th-century-boys-1-the-beginning-of-the-end-2008/posters/20th-century-boys-2008.jpg,20th-century-boys-1-the-beginning-of-the-end-2008,20th Century Boys 1: The Beginning of the End,2008-08-30,142,true
+ALIVE,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/alive-2003/posters/alive-2003.jpg,alive-2003,Alive,2003-06-21,150,true
+電送人間,Transmitted Man,Densô Ningen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/secret-of-the-telegian-1960/posters/secret-of-the-telegian-1960.jpg,secret-of-the-telegian-1960,The Secret of the Telegian,1960-04-10,85,true
+奇巌城の冒険,The Adventure of Strange Rock Castle,Kiganjô No Bôken,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/adventure-of-kigan-castle-1966/posters/adventures-of-taklamakan-1966.jpg,adventure-of-kigan-castle-1966,The Adventure of Kigan Castle,1966-04-28,100,true
+座頭市関所破り,Zatôichi Checkpoint Breaker,Zatôichi Sekishoyaburi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/adventures-of-zatoichi-1964/posters/adventures-of-zatoichi-1964.jpg,adventures-of-zatoichi-1964,Adventures of Zatoichi,1964-12-30,86,true
+るろうに剣心 京都大火編,Rurouni Kenshin Great Fire of Kyoto,Rurôni Kenshin Kyôto Taika-hen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rurouni-kenshin-kyoto-inferno-2014/posters/rurouni-kenshin-kyoto-inferno-2014.jpg,rurouni-kenshin-kyoto-inferno-2014,Rurouni Kenshin: Kyoto Inferno,2014-08-01,139,true
+エコエコアザラク -WIZARD OF DARKNESS-,Eko Eko Azarak Wizard of Darkness,Eko Eko Azaraku Wizard of Darkness,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/eko-eko-azarak-wizard-of-darkness-1995/posters/eko-eko-azarak-wizard-of-darkness-1995.jpg,eko-eko-azarak-wizard-of-darkness-1995,Eko Eko Azarak: Wizard of Darkness,1995-04-08,80,true
+宇宙大怪獣ドゴラ,Space Giant Monster Dogora,Uchû Daikaijû Dogora,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/dogora-1964/posters/dogora-the-space-monster-1964.jpg,dogora-1964,Dogora,1964-08-11,81,true
+エコエコアザラクIII -MISA THE DARK ANGEL-,Eko Eko Azarak III Misa the Dark Angel,Eko Eko Azaraku III Misa the Dark Angel,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/eko-eko-azarak-iii-misa-the-dark-angel-1998/posters/eko-eko-azarak-iii-misa-the-dark-angel-1998.jpg,eko-eko-azarak-iii-misa-the-dark-angel-1998,Eko Eko Azarak III: Misa the Dark Angel,1998-01-15,95,true
+SHINOBI-HEART UNDER BLADE-,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/shinobi-heart-under-blade-2005/posters/shinobi-heart-under-blade-2005.jpg,shinobi-heart-under-blade-2005,Shinobi: Heart Under Blade,2005-09-17,101,true
+荒神,Aragami,Aragami,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/aragami-2003/posters/aragami-2003.jpg,aragami-2003,Aragami,2003-03-27,78,true
+血を吸う薔薇,Bloodthirsty Rose,Chiwosuu Bara,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/evil-of-dracula-1974/posters/evil-of-dracula-1974.jpg,evil-of-dracula-1974,Evil of Dracula,1974-07-20,83,true
+戦国自衛隊,Sengoku Self Defense Force,Sengoku Jieitai,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/g-i-samurai-1979/posters/g-i-samurai-1979.jpg,g-i-samurai-1979,G.I. Samurai,1979-12-15,139,true
+ALWAYS 三丁目の夕日'64,Always Sunset on Third Street '64,Always Sanchôme No Yûhi '64,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/always-sunset-on-third-street-3-2012/posters/always-3-2012.jpg,always-sunset-on-third-street-3-2012,Always: Sunset on Third Street 3,2012-01-21,142,true
+ASSAULT GIRLS,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/assault-girls-2009/posters/assault-girls-2009.jpg,assault-girls-2009,Assault Girls,2009-12-19,70,true
+黄金バット,Golden Bat,Ôgon Batto,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/golden-bat-1966/posters/golden-bat-1966.jpg,golden-bat-1966,The Golden Bat,1966-12-21,73,true
+モスラ,Mothra,Mosura,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rebirth-of-mothra-1996/posters/rebirth-of-mothra-1996.jpg,rebirth-of-mothra-1996,Rebirth of Mothra,1996-12-14,106,true
+陰陽師,Ying Yang Master,Onmyôji,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/onmyoji-2001/posters/onmyoji-2001.jpg,onmyoji-2001,Onmyoji,2001-10-06,116,true
+ゴジラ対メガロ,Godzilla vs. Megalon,Gojira Tai Megaro,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-megalon-1973/posters/godzilla-vs-megalon-1973.jpg,godzilla-vs-megalon-1973,Godzilla vs. Megalon,1973-03-17,82,true
+ゴジラvsスペースゴジラ,Godzilla vs SpaceGodzilla,Gojira vs Supêsugojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-spacegodzilla-1994/posters/godzilla-vs-space-godzilla-1994.jpg,godzilla-vs-spacegodzilla-1994,Godzilla vs. SpaceGodzilla,1994-12-10,108,true
+GHOST IN THE SHELL / 攻殻機動隊,Shell Squad,Ghost in the Shell / Kôkaku Kidôtai,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ghost-in-the-shell-1995/posters/ghost-in-the-shell-1995.jpg,ghost-in-the-shell-1995,Ghost in the Shell,1995-11-18,85,true
+ゴジラ FINAL WARS,Godzilla Final Wars,Gojira Final Wars,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-final-wars-2004/posters/godzilla-final-wars-2004.jpg,godzilla-final-wars-2004,Godzilla: Final Wars,2004-12-04,125,true
+ゴジラ・ミニラ・ガバラ オール怪獣大進撃,Godzilla Minilla Gabara All Monsters Great Attack,Gojira Minira Gabara Ôru Kaijû Daishingeki,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/all-monsters-attack-1969/posters/godzillas-revenge-1969.jpg,all-monsters-attack-1969,All Monsters Attack,1969-12-20,70,true
+ゴジラvsキングギドラ,Godzilla vs King Ghidorah,Gojira vs Kingugidora,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-king-ghidorah-1991/posters/godzilla-vs-king-ghidorah-1991.jpg,godzilla-vs-king-ghidorah-1991,Godzilla vs. King Ghidorah,1991-12-14,103,true
+GOEMON,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/goemon-2009/posters/goemon-2009.jpg,goemon-2009,Goemon,2009-05-01,128,true
+ゴジラ×メカゴジラ,Godzilla × Mechagodzilla,Gojira × Mekagojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-against-mechagodzilla-2002/posters/godzilla-x-mechagodzilla-2002.jpg,godzilla-against-mechagodzilla-2002,Godzilla Against Mechagodzilla,2002-12-14,88,true
+チーム・バチスタの栄光,Glory of Team Batista,Chîmu Bachisuta No Eikô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/glorious-team-batista-2008/posters/glorious-team-batista-2008.jpg,glorious-team-batista-2008,The Glorious Team Batista,2008-02-09,118,true
+海底軍艦,Undersea Warship,Kaitei Gunkan,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/atragon-1963/posters/atragon-1963.jpg,atragon-1963,Atragon,1963-12-22,94,true
+空の大怪獣 ラドン,Giant Sky Monster Rodan,Sora No Daikaijû Radon,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rodan-1956/posters/rodan-1956.jpg,rodan-1956,Rodan,1956-12-26,82,true
+タオの月,Tao Moon,Tao no Tsuki,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/moon-over-tao-1997/posters/moon-over-tao-1997.jpg,moon-over-tao-1997,Moon Over Tao,1997-11-29,96,true
+キングコング対ゴジラ,King Kong vs. Godzilla,Kingukongu Tai Gojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/king-kong-vs-godzilla-1962/posters/king-kong-vs-godzilla-1962.jpg,king-kong-vs-godzilla-1962,King Kong vs. Godzilla,1962-08-11,97,true
+宇宙からのメッセージ,Message from Space,Uchû Kara No Messêji,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/message-from-space-1978/posters/message-from-space-1978.jpg,message-from-space-1978,Message from Space,1978-04-29,105,true
+仮面ライダー THE NEXT,Masked Rider The Next,Kamen Raidâ The Next,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/kamen-rider-the-next-2007/posters/masked-rider-the-next-2007.jpg,kamen-rider-the-next-2007,Kamen Rider: The Next,2007-10-27,113,true
+カムイ外伝,Kamui Gaiden,Kamui Gaiden,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/kamui-gaiden-2009/posters/kamui-gaiden-2009.jpg,kamui-gaiden-2009,Kamui Gaiden,2009-09-19,120,true
+カイジ2 人生奪回ゲーム,Kaiji 2 Take Back Life Game,Kaiji 2 Jinsei Dakkai Gêmu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/kaiji-2-2011/posters/kaiji-2-2011.jpg,kaiji-2-2011,Kaiji 2,2011-11-05,155,true
+ルパン三世,Lupin III,Rupan Sansei,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/lupin-the-3rd-2014/posters/lupin-the-third-2014.jpg,lupin-the-3rd-2014,Lupin the 3rd,2014-08-30,133,true
+地震列島,Earthquake Archipelago,Jishin Rettô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/magnitude-7-9-1980/posters/earthquake-archipelago-1980.jpg,magnitude-7-9-1980,Magnitude 7.9,1980-08-30,126,true
+リング,Ring,Ringu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ring-1998/posters/ring-1998.jpg,ring-1998,Ring,1998-01-31,95,true
+ゼイラム,Zëiram,Zeiramu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zeiram-1991/posters/zeiram-1991.jpg,zeiram-1991,Zëiram,1991-12-21,97,true
+着信アリ,Incoming Call,Chakushin Ari,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/one-missed-call-2003/posters/one-missed-call-2003.jpg,one-missed-call-2003,One Missed Call,2003-11-03,112,true
+崖の上のポニョ,Ponyo on the Cliff,Gake No Ue No Ponyo,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ponyo-2008/posters/ponyo-2008.jpg,ponyo-2008,Ponyo,2008-07-19,101,true
+進撃の巨人 エンド オブ ザ ワールド,Attack on Titan End of the World,Shingeki No Kyojin Endo Obu Za Wârudo,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/attack-on-titan-end-of-the-world-2015/posters/attack-on-titan-end-of-the-world-2015.jpg,attack-on-titan-end-of-the-world-2015,Attack on Titan: End of the World,2015-09-19,87,true
+パラサイト・イヴ,Parasite Eve,Parasaito Ibu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/parasite-eve-1997/posters/parasite-eve-1997.jpg,parasite-eve-1997,Parasite Eve,1997-02-01,120,true
+着信アリFinal,Incoming Call Final,Chakushin Ari Final,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/one-missed-call-final-2006/posters/one-missed-call-final-2006.jpg,one-missed-call-final-2006,One Missed Call: Final,2006-06-24,105,true
+プラチナデータ,Platinum Data,Purachina Dêta,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/platinum-data-2013/posters/platina-data-2013.jpg,platinum-data-2013,Platinum Data,2013-03-16,133,true
+着信アリ2,Incoming Call 2,Chakushin Ari 2,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/one-missed-call-2-2005/posters/one-missed-call-2-2005.jpg,one-missed-call-2-2005,One Missed Call 2,2005-02-05,106,true
+紅の豚,Crimson Pig,Kurenai No Buta,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/porco-rosso-1992/posters/porco-rosso-1992.jpg,porco-rosso-1992,Porco Rosso,1992-07-18,93,true
+さくや妖怪伝,Sakuya Yokai Legend,Sakuya Yôkai-den,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/sakuya-slayer-of-demons-2000/posters/sakuya-slayer-of-demons-2000.jpg,sakuya-slayer-of-demons-2000,Sakuya: Slayer of Demons,2000-08-12,88,true
+リング0 バースデイ,Ring 0 Birthday,Ringu Zero Bâsudei,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ring-0-birthday-2000/posters/ring-0-birthday-2000.jpg,ring-0-birthday-2000,Ring 0: Birthday,2000-01-22,99,true
+ゲゾラ・ガニメ・カメーバ 決戦！ 南海の大怪獣,Gezora Ganime Kamoebas Decisive Battle! Giant Monsters of the South Seas,Gezora Ganime Kamêba Kessen! Nankai No Daikaijû,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/space-amoeba-1970/posters/space-amoeba-1970.jpg,space-amoeba-1970,Space Amoeba,1970-08-01,84,true
+座頭市果し状,Zatôichi Letter of Challenge,Zatôichi Hatashijô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-and-the-fugitives-1968/posters/zatoichi-and-the-fugitives-1968.jpg,zatoichi-and-the-fugitives-1968,Zatoichi and the Fugitives,1968-08-10,82,true
+座頭市御用旅,Zatôichi Errand,Zatôichi Goyôtabi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-at-large-1972/posters/zatoichi-at-large-1972.jpg,zatoichi-at-large-1972,Zatoichi at Large,1972-01-15,90,true
+座頭市喧嘩旅,Zatôichi Fighting Journey,Zatôichi Kenkatabi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-on-the-road-1963/posters/Zatoichi.jpg,zatoichi-on-the-road-1963,Zatoichi on the Road,1963-11-30,88,true
+座頭市牢破り,Zatôichi Prisonbreaker,Zatôichi Rôyaburi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-the-outlaw-1967/posters/zatoichi-the-outlaw-1967.jpg,zatoichi-the-outlaw-1967,Zatoichi the Outlaw,1967-08-12,96,true
+座頭市鉄火旅,Zatôichi Fire Journey,Zatôichi Tekkatabi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichis-cane-sword-1967/posters/zatoichis-cane-sword-1967.jpg,zatoichis-cane-sword-1967,Zatoichi's Cane Sword,1967-01-03,93,true
+あずみ2 Death or Love,Azumi 2 Death or Love,Azumi 2 Death or Love,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/azumi-2-death-or-love-2005/posters/azumi-2-death-or-love-2005.jpg,azumi-2-death-or-love-2005,Azumi 2: Death or Love,2005-03-12,112,true
+ガッチャマン,Gatchaman,Gatchaman,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gatchaman-2013/posters/gatchaman-2013.jpg,gatchaman-2013,Gatchaman,2013-08-24,113,true
+三匹の侍,Three Samurai,Sanbiki No Samurai,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/three-outlaw-samurai-1964/posters/three-outlaw-samurai-1964.jpg,three-outlaw-samurai-1964,Three Outlaw Samurai,1964-05-13,94,true
+ULTRAMAN,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ultraman-the-next-2004/posters/ultraman-2004.jpg,ultraman-the-next-2004,Ultraman: The Next,2004-12-18,97,true
+座頭市の歌が聞える,I Can Hear the Song of Zatôichi,Zatôichi No Uta Ga Kikoeru,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichis-vengeance-1966/posters/zatoichis-vengeance-1966.jpg,zatoichis-vengeance-1966,Zatoichi's Vengeance,1966-05-03,83,true
+日本沈没,Japan Sinks,Nihon Chinbotsu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/sinking-of-japan-2006/posters/sinking-of-japan-2006.jpg,sinking-of-japan-2006,The Sinking of Japan,2006-07-15,135,true
+さよならジュピター,Goodbye Jupiter,Sayonara Jupitâ,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/sayonara-jupiter-1984/posters/sayonara-jupiter-1984.jpg,sayonara-jupiter-1984,Sayonara Jupiter,1984-03-17,129,true
+續宮本武蔵 一乘寺の決斗,Continued Miyamoto Musashi Duel at Ichijoji,Zoku Miyamoto Musashi Ichijôji No Kettô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/samurai-ii-duel-at-ichijoji-temple-1955/posters/samurai-ii-duel-at-ichijoji-temple-1955.jpg,samurai-ii-duel-at-ichijoji-temple-1955,Samurai II: Duel at Ichijoji Temple,1955-07-12,103,true
+七人の侍,Seven Samurai,Shichinin No Samurai,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/seven-samurai-1954/posters/seven-samurai-1954.jpg,seven-samurai-1954,Seven Samurai,1954-04-26,207,true
+妖星ゴラス,Mystery Planet Gorath,Yôsei Gorasu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gorath-1962/posters/gorath-1962.jpg,gorath-1962,Gorath,1962-03-21,88,true
+怪獣島の決戦 ゴジラの息子,Decisive Battle on Monster Island Son of Godzilla,Kaijû-to No Kessen Gojira No Musuko,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/son-of-godzilla-1967/posters/son-of-godzilla-1967.jpg,son-of-godzilla-1967,Son of Godzilla,1967-12-16,86,true
+魔界転生,Demon World Incarnation,Makai Tenshô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/samurai-reincarnation-1981/posters/makai-tensho-samurai-reincarnation-1981.jpg,samurai-reincarnation-1981,Samurai Reincarnation,1981-06-06,122,true
+蜘蛛巣城,Spider Web Castle,Kumonosu-jô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/throne-of-blood-1957/posters/throne-of-blood-1957.jpg,throne-of-blood-1957,Throne of Blood,1957-01-15,110,true
+VERSUS,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/versus-2000/posters/versus-2000.jpg,versus-2000,Versus,2000-09-08,119,true
+座頭市血笑旅,Zatôichi Bloody Journey,Zatôichi Kesshôtabi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/fight-zatoichi-fight-1964/posters/fight-zatoichi-fight-1964.jpg,fight-zatoichi-fight-1964,"Fight, Zatoichi, Fight",1964-10-17,87,true
+らせん,Spiral,Rasen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/spiral-1998/posters/rasen-1998.jpg,spiral-1998,Spiral,1998-01-31,97,true
+GANTZ,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gantz-2011/posters/gantz-2011.jpg,gantz-2011,Gantz,2011-01-29,130,true
+デスノート,Death Note,Desu Nôto,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/death-note-2006/posters/death-note-2006.jpg,death-note-2006,Death Note,2006-06-17,126,true
+大怪獣空中戦 ガメラ対ギャオス,Giant Monsters Aerial Battle Gamera vs. Gyaos,Daikaijû Kûchûsen Gamera Tai Gyaosu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-vs-gyaos-1967/posters/gamera-vs-gyaos-1967.jpg,gamera-vs-gyaos-1967,Gamera vs. Gyaos,1967-03-15,87,true
+<ruby>friends<rt>フレンズ</rt></ruby> もののけ島のナキ,Friends Naki on Monster Island,friends Mononoke Shima No Naki,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/friends-naki-on-monster-island-2011/posters/friends-2011.jpg,friends-naki-on-monster-island-2011,Friends: Naki on Monster Island,2011-12-17,87,true
+バトル・ロワイアル,Battle Royale,Batoru Rowaiaru,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/battle-royale-2000/posters/battle-royale-2000.jpg,battle-royale-2000,Battle Royale,2000-12-16,114,true
+東京湾炎上,Tokyo Bay Burns,Tôkyô-wan Enjô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/conflagration-1975/posters/explosion-1975.jpg,conflagration-1975,Conflagration,1975-07-12,100,true
+千と千尋の神隠し,Sen and Chihiro's Mysterious Disappearance,Sen To Chihiro No Kamikakushi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/spirited-away-2001/posters/spirited-away-2001.jpg,spirited-away-2001,Spirited Away,2001-07-20,124,true
+スカイ・クロラ The Sky Crawlers,Sky Crawler The Sky Crawlers,Sukai Kurora The Sky Crawlers,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/sky-crawlers-2008/posters/sky-crawlers-2008.jpg,sky-crawlers-2008,The Sky Crawlers,2008-08-02,122,true
+士魂魔道 大龍巻,Warrior's Spirit Great Tornado,Shikon Madô Daitatsumaki,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/whirlwind-1964/posters/whirlwind-1964.jpg,whirlwind-1964,Whirlwind,1964-01-03,106,true
+里見八犬伝,Satomi's Eight Dog Warriors,Satomi Hakkenden,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/legend-of-the-eight-samurai-1983/posters/legend-of-the-eight-samurai-1983.jpg,legend-of-the-eight-samurai-1983,Legend of the Eight Samurai,1983-12-10,136,true
+モスラ,Mothra,Mosura,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/mothra-1961/posters/mothra-1961.jpg,mothra-1961,Mothra,1961-07-30,101,true
+ゴジラ対ヘドラ,Godzilla vs. Hedorah,Gojira Tai Hedora,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-hedorah-1971/posters/godzilla-vs-hedorah-1971.jpg,godzilla-vs-hedorah-1971,Godzilla vs. Hedorah,1971-07-24,85,true
+アイアムアヒーロー,I Am A Hero,Ai Amu A Hîrô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/i-am-a-hero-2016/posters/i-am-a-hero-2016.jpg,i-am-a-hero-2016,I Am A Hero,2016-04-23,127,true
+大魔神怒る,Daimajin Grows Angry,Daimajin Okoru,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/return-of-daimajin-1966/posters/return-of-daimajin-1966.jpg,return-of-daimajin-1966,Return of Daimajin,1966-08-13,79,true
+新・座頭市物語,New Zatôichi Story,Shin Zatôichi Monogatari,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/new-tale-of-zatoichi-1963/posters/new-tale-of-zatoichi-1963.jpg,new-tale-of-zatoichi-1963,New Tale of Zatoichi,1963-03-15,91,true
+STAND BY ME ドラえもん,Stand By Me Doraemon,Stand By Me Doraemon,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/stand-by-me-doraemon-2014/posters/stand-by-me-doraemon-2014.jpg,stand-by-me-doraemon-2014,"Stand By Me, Doraemon",2014-08-08,95,true
+シン・ゴジラ,Shin Godzilla,Shin Gojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/shin-godzilla-2016/posters/shin-godzilla-2016.jpg,shin-godzilla-2016,Shin Godzilla,2016-07-29,119,true
+日本誕生,Birth of Japan,Nihon Tanjô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/three-treasures-1959/posters/birth-of-japan-1959.jpg,three-treasures-1959,The Three Treasures,1959-10-25,182,true
+大魔神逆襲,Daimajin Strikes Back,Daimajin Gyakushû,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/wrath-of-daimajin-1966/posters/daimajin-strikes-again-1966.jpg,wrath-of-daimajin-1966,Wrath of Daimajin,1966-12-10,87,true
+人造人間ハカイダー,Artificial Human Hakaider,Jinzô Ningen Hakaidâ,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/mechanical-violator-hakaider-1995/posters/mechanical-violator-hakaider-1995.jpg,mechanical-violator-hakaider-1995,Mechanical Violator Hakaider,1995-04-15,52,true
+ホッタラケの島 〜遥と魔法の鏡〜,Hottarake Island ~Haruka and the Magic Mirror~,Hottarake No Shima ~Haruka To Mahô No Kagami~,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/oblivion-island-haruka-and-the-magic-mirror-2009/posters/oblivion-island-2009.jpg,oblivion-island-haruka-and-the-magic-mirror-2009,Oblivion Island: Haruka and the Magic Mirror,2009-08-22,93,true
+陰陽師II,Ying Yang Master II,Onmyôji II,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/onmyoji-ii-2003/posters/onmyoji-ii-2003.jpg,onmyoji-ii-2003,Onmyoji II,2003-10-04,115,true
+座頭市兇状旅,Zatôichi Funeral Journey,Zatôichi Kyôjôtabi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-the-fugitive-1963/posters/zatoichi-the-fugitive-1963.jpg,zatoichi-the-fugitive-1963,Zatoichi the Fugitive,1963-08-10,86,true
+魔女の宅急便,Witch's Express Home Delivery,Majo No Takkyûbin,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/kikis-delivery-service-1989/posters/kikis-delivery-service-1989.jpg,kikis-delivery-service-1989,Kiki's Delivery Service,1989-07-29,102,true
+リング2,Ring 2,Ringu 2,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ring-2-1999/posters/ring-2-1999.jpg,ring-2-1999,Ring 2,1999-01-23,95,true
+宮本武蔵 完結篇 決闘巌流島,Miyamoto Musashi Final Chapter Duel Ganryu Island,Miyamoto Musashi Kanketsu-hen Kettô Ganryû-jima,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/samurai-iii-duel-at-ganryu-island-1956/posters/samurai-iii-duel-at-ganryu-island-1956.jpg,samurai-iii-duel-at-ganryu-island-1956,Samurai III: Duel at Ganryu Island,1956-01-03,104,true
+スカイハイ 劇場版,Sky High the Movie,Sukaihai Gekijô-ban,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/sky-high-2003/posters/skyhigh-2003.jpg,sky-high-2003,Sky High,2003-11-08,123,true
+ケルベロス-地獄の番犬,Kerberos -Hell's Watchdog-,Keruberosu -Jigoku No Banken-,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/stray-dog-kerberos-panzer-cops-1991/posters/stray-dog-kerberos-panzer-cops-1991.jpg,stray-dog-kerberos-panzer-cops-1991,Stray Dog: Kerberos Panzer Cops,1991-03-23,99,true
+寄生獣 完結編,Parasite Final Chapter,Kiseijû Kanketsu-hen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/parasyte-part-2-2015/posters/parasyte-completion-2015.jpg,parasyte-part-2-2015,Parasyte: Part 2,2015-04-25,117,true
+座頭市地獄旅,Zatôichi Hell Journey,Zatôichi Jigoku Tabi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-and-the-chess-expert-1965/posters/zatoichi-and-the-chess-expert-1965.jpg,zatoichi-and-the-chess-expert-1965,Zatoichi and the Chess Expert,1965-12-24,87,true
+ゴジラvsモスラ,Godzilla vs Mothra,Gojira vs Mosura,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-mothra-1992/posters/godzilla-vs-mothra-1992.jpg,godzilla-vs-mothra-1992,Godzilla vs. Mothra,1992-12-12,102,true
+L change the WorLd,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/l-change-the-world-2008/posters/l-change-the-world-2008.jpg,l-change-the-world-2008,L: Change the World,2008-02-09,129,true
+宮本武蔵,Miyamoto Musashi,Miyamoto Musashi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/samurai-i-musashi-miyamoto-1954/posters/samurai-i-musashi-miyamoto-1954.jpg,samurai-i-musashi-miyamoto-1954,Samurai I: Musashi Miyamoto,1954-09-26,94,true
+SPACE BATTLESHIP ヤマト,Space Battleship Yamato,Space Battleship Yamato,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/space-battleship-yamato-2010/posters/space-battleship-yamato-2010.jpg,space-battleship-yamato-2010,Space Battleship Yamato,2010-12-01,138,true
+日本沈没,Japan Sinks,Nihon Chinbotsu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/submersion-of-japan-1973/posters/submersion-of-japan-1973.jpg,submersion-of-japan-1973,Submersion of Japan,1973-12-29,140,true
+座頭市物語,Zatôichi Story,Zatôichi Monogatari,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/tale-of-zatoichi-1962/posters/tale-of-zatoichi-1962.jpg,tale-of-zatoichi-1962,The Tale of Zatoichi,1962-04-18,96,true
+一命,One Life,Ichimei,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/hara-kiri-death-of-a-samurai-2011/posters/hara-kiri-death-of-a-samurai-2011.jpg,hara-kiri-death-of-a-samurai-2011,Hara-Kiri: Death of a Samurai,2011-10-15,126,true
+ローレライ,Lorelei,Rôrerai,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/lorelei-the-witch-of-the-pacific-ocean-2005/posters/lorelei-2005.jpg,lorelei-the-witch-of-the-pacific-ocean-2005,Lorelei: The Witch of the Pacific Ocean,2005-03-05,128,true
+カイジ 人生逆転ゲーム,Kaiji Change Life Game,Kaiju Jinsei Gyakuten Gêmu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/kaiji-2009/posters/kaiji-2009.jpg,kaiji-2009,Kaiji,2009-10-10,129,true
+紅い眼鏡/The Red Spectacles,Red Glasses / The Red Spectacles,Akai Megane / The Red Spectacles,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/red-spectacles-1987/posters/red-spectacles-1987.jpg,red-spectacles-1987,The Red Spectacles,1987-02-07,116,true
+ゴジラ×メガギラス G消滅作戦,Godzilla × Megaguirus G Annihilation Operation,Gojira × Megagirasu G Shômetsu Sakusen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-megaguirus-2000/posters/godzilla-x-megaguirus-2000.jpg,godzilla-vs-megaguirus-2000,Godzilla vs. Megaguirus,2000-12-16,105,true
+吸血鬼ゴケミドロ,Vampire Gokemidoro,Kyûketsuki Gokemidoro,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/goke-body-snatcher-from-hell-1968/posters/goke-body-snatcher-from-hell-1968.jpg,goke-body-snatcher-from-hell-1968,"Goke, Body Snatcher from Hell",1968-08-14,84,true
+続・座頭市物語,Continued Zatôichi Story,Zoku Zatôichi Monogatari,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/tale-of-zatoichi-continues-1962/posters/tale-of-zatoichi-continues-1962.jpg,tale-of-zatoichi-continues-1962,The Tale of Zatoichi Continues,1962-10-12,73,true
+座頭市二段斬り,Zatôichi Double Slash,Zatôichi Nidangiri,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichis-revenge-1965/posters/zatoichis-revenge-1965.jpg,zatoichis-revenge-1965,Zatoichi's Revenge,1965-04-03,84,true
+小さき勇者たち〜ガメラ〜,Small Heroes ~Gamera~,Chîsaki Yûshatachi ~Gamera~,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-the-brave-2006/posters/gamera-the-brave-2006.jpg,gamera-the-brave-2006,Gamera the Brave,2006-04-29,96,true
+となりのトトロ,My Neighbor Totoro,Tonari No Totoro,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/my-neighbor-totoro-1988/posters/my-neighbor-totoro-1988.jpg,my-neighbor-totoro-1988,My Neighbor Totoro,1988-04-16,87,true
+世界大戦争,World Great War,Sekai Daisensô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/last-war-1961/posters/last-war-1961.jpg,last-war-1961,The Last War,1961-10-08,110,true
+機動警察パトレイバー the Movie,Mobile Police Patlabor The Movie,Kidô Keisatsu Patoreibâ The Movie,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/patlabor-the-movie-1989/posters/patlabor-the-movie-1989.jpg,patlabor-the-movie-1989,Patlabor: The Movie,1989-07-15,100,true
+ゴジラvsデストロイア,Godzilla vs Destoroyah,Gojira vs Desutoroia,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-destoroyah-1995/posters/godzilla-vs-destroyer-1995.jpg,godzilla-vs-destoroyah-1995,Godzilla vs. Destoroyah,1995-12-09,103,true
+人狼 JIN-ROH,Werewolf Jin-Roh,Jinrô Jin-Roh,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/jin-roh-the-wolf-brigade-2000/posters/jin-roh-the-wolf-brigade-2000.jpg,jin-roh-the-wolf-brigade-2000,Jin-Roh: The Wolf Brigade,2000-06-03,98,true
+鉄人28号,Tetsujin 28,Tetsujin 28-gô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/tetsujin-28-2005/posters/tetsujin-28-2005.jpg,tetsujin-28-2005,Tetsujin-28,2005-03-19,114,true
+ゼイラム2,Zëiram 2,Zeiramu 2,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zeiram-2-1994/posters/zeiram-2-1994.jpg,zeiram-2-1994,Zëiram 2,1994-12-17,100,true
+ゴジラ・モスラ・キングギドラ 大怪獣総攻撃,Godzilla Mothra King Ghidorah Giant Monsters All-Out Attack,Gojira Mosura Kingugidora Daikaijû Sôkôgeki,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-mothra-and-king-ghidorah-giant-monsters-all-out-attack-2001/posters/gmk-2001.jpg,godzilla-mothra-and-king-ghidorah-giant-monsters-all-out-attack-2001,"Godzilla, Mothra and King Ghidorah: Giant Monsters All-Out Attack",2001-12-15,105,true
+ガメラ対大悪獣ギロン,Gamera vs. Giant Evil Beast Guiron,Gamera Tai Daiwarujû Giron,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-vs-guiron-1969/posters/gamera-vs-guiron-1969.jpg,gamera-vs-guiron-1969,Gamera vs. Guiron,1969-03-21,82,true
+ゴジラの逆襲,Godzilla Strikes Back,Gojira No Gyakushû,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-raids-again-1955/posters/godzilla-raids-again-1955.jpg,godzilla-raids-again-1955,Godzilla Raids Again,1955-04-24,82,true
+宇宙大戦争,Space Great War,Uchû Daisensô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/battle-in-outer-space-1959/posters/battle-in-outer-space-1959.jpg,battle-in-outer-space-1959,Battle in Outer Space,1959-12-26,91,true
+宇宙怪獣ガメラ,Space Monster Gamera,Uchû Kaijû Gamera,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-super-monster-1980/posters/gamera-the-space-monster-1980.jpg,gamera-super-monster-1980,Gamera: Super Monster,1980-03-20,109,true
+大怪獣ガメラ,Giant Monster Gamera,Daikaijû Gamera,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-the-giant-monster-1965/posters/gamera-the-giant-monster-1965.jpg,gamera-the-giant-monster-1965,"Gamera, the Giant Monster",1965-11-27,78,true
+首都消失,Disappearance of the Capital,Shuto Shôshitsu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/tokyo-blackout-1987/posters/tokyo-blackout-1987.jpg,tokyo-blackout-1987,Tokyo Blackout,1987-01-17,120,true
+フランケンシュタイン対<ruby>地底怪獣<rt>バラゴン</rt></ruby>,Frankenstein vs. Underground Monster (Baragon),Furankenshutain Tai Chitei Kaijû (Baragon),https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/frankenstein-conquers-the-world-1965/posters/frankenstein-conquers-the-world-1965.jpg,frankenstein-conquers-the-world-1965,Frankenstein Conquers the World,1965-08-08,94,true
+ガンヘッド,Gunhed,Ganheddo,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gunhed-1989/posters/gunhed-1989.jpg,gunhed-1989,Gunhed,1989-07-22,100,true
+ALWAYS 続・三丁目の夕日,Always Continued Sunset on Third Street,Always Zoku Sanchôme No Yûhi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/always-sunset-on-third-street-2-2007/posters/always-2-2007.jpg,always-sunset-on-third-street-2-2007,Always: Sunset on Third Street 2,2007-11-03,146,true
+ハウルの動く城,Howl's Moving Castle,Hauru No Ugokushiro,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/howls-moving-castle-2004/posters/howls-moving-castle-2004.jpg,howls-moving-castle-2004,Howl's Moving Castle,2004-11-20,119,true
+デスノート Light up the NEW world,Death Note Light Up the New World,Desu Nôto Light Up the New World,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/death-note-light-up-the-new-world-2016/posters/death-note-light-up-the-new-world-2016.jpg,death-note-light-up-the-new-world-2016,Death Note: Light Up the New World,2016-10-29,135,true
+エコエコアザラクII -BIRTH OF THE WIZARD-,Eko Eko Azarak II Birth of the Wizard,Eko Eko Azaraku II Birth of the Wizard,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/eko-eko-azarak-ii-birth-of-the-wizard-1996/posters/eko-eko-azarak-ii-birth-of-the-wizard-1996.jpg,eko-eko-azarak-ii-birth-of-the-wizard-1996,Eko Eko Azarak II: Birth of the Wizard,1996-04-10,83,true
+怪獣大戦争,Monster Great War,Kaijû Daisensô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/invasion-of-astro-monster-1965/posters/monster-zero-1965.jpg,invasion-of-astro-monster-1965,Invasion of Astro-Monster,1965-12-19,94,true
+ジェネラル・ルージュの凱旋,Triumph of General Rouge,Jeneraru Rûju No Gaisen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/triumphant-return-of-general-rouge-2009/posters/triumphant-general-rouge-2009.jpg,triumphant-return-of-general-rouge-2009,The Triumphant Return of General Rouge,2009-03-07,123,true
+ゴジラ×モスラ×メカゴジラ 東京SOS,Godzilla × Mothra × Mechagodzilla Tokyo SOS,Gojira × Mosura × Mekagojira Tôkyô SOS,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-tokyo-sos-2003/posters/godzilla-x-mothra-x-mechagodzilla-tokyo-sos-2003.jpg,godzilla-tokyo-sos-2003,Godzilla: Tokyo S.O.S.,2003-12-13,91,true
+K-20 怪人二十面相・伝,K-20 Fiend with Twenty Faces,K-20 Kaijin Nijûmensô Den,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/k-20-legend-of-the-mask-2008/posters/k-20-2008.jpg,k-20-legend-of-the-mask-2008,K-20: Legend of the Mask,2008-12-20,137,true
+椿三十郎,Tsubaki Sanjuro,Tsubaki Sanjûrô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/tsubaki-sanjuro-2007/posters/tsubaki-sanjuro-2007.jpg,tsubaki-sanjuro-2007,Tsubaki Sanjuro,2007-12-01,119,true
+惑星大戦争,Great Planetary War,Wakusei Daisensô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/war-in-space-1977/posters/war-in-space-1977.jpg,war-in-space-1977,The War in Space,1977-12-17,91,true
+ルパン三世 カリオストロの城,Lupin III Castle of Cagliostro,Rupan Sansei Kariosutoro No Shiro,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/lupin-iii-the-castle-of-cagliostro-1979/posters/lupin-the-third-the-castle-of-cagliostro-1979.jpg,lupin-iii-the-castle-of-cagliostro-1979,Lupin III: The Castle of Cagliostro,1979-12-15,100,true
+怪竜大決戦,Strange Dragon Great Decisive Battle,Kairyû Daikessen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/magic-serpent-1966/posters/magic-serpent-1966.jpg,magic-serpent-1966,The Magic Serpent,1966-12-21,94,true
+機動警察パトレイバー 2 the Movie,Mobile Police Patlabor 2 The Movie,Kidô Keisatsu Patoreibâ 2 The Movie,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/patlabor-2-the-movie-1993/posters/patlabor-2-the-movie-1993.jpg,patlabor-2-the-movie-1993,Patlabor 2: The Movie,1993-08-07,113,true
+幽霊屋敷の恐怖 血を吸う人形,Horror of the Haunted House Bloodthirsty Doll,Yûrei Yashiki No Kyôfu Chiwosuu Ningyô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/vampire-doll-1970/posters/vampire-doll-1970.jpg,vampire-doll-1970,The Vampire Doll,1971-07-04,71,true
+メカゴジラの逆襲,Mechagodzilla Strikes Back,Mekagojira No Gyakushû,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/terror-of-mechagodzilla-1975/posters/terror-of-mechagodzilla-1975.jpg,terror-of-mechagodzilla-1975,Terror of Mechagodzilla,1975-03-15,83,true
+るろうに剣心,Rurouni Kenshin,Rurôni Kenshin,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rurouni-kenshin-2012/posters/rurouni-kenshin-2012.jpg,rurouni-kenshin-2012,Rurouni Kenshin,2012-08-25,134,true
+新座頭市物語 笠間の血祭り,New Zatôichi Story Kasama Blood Festival,Shin Zatôichi Monogatari Kasama No Chimatsuri,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichis-conspiracy-1973/posters/zatoichis-conspiracy-1973.jpg,zatoichis-conspiracy-1973,Zatoichi's Conspiracy,1973-04-21,88,true
+秘密 THE TOP SECRET,Secret The Top Secret,Himitsu The Top Secret,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/top-secret-murder-in-mind-2016/posters/top-secret-2016.jpg,top-secret-murder-in-mind-2016,The Top Secret: Murder in Mind,2016-08-06,148,true
+大怪獣バラン,Giant Monster Varan,Daikaijû Baran,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/varan-the-unbelievable-1958/posters/varan-the-unbelievable-1958.jpg,varan-the-unbelievable-1958,Varan the Unbelievable,1958-10-14,82,true
+座頭市千両首,Zatôichi Thousand Ryô Neck,Zatôichi Senryôkubi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-and-the-chest-of-gold-1964/posters/zatoichi-and-the-chest-of-gold-1964.jpg,zatoichi-and-the-chest-of-gold-1964,Zatoichi and the Chest of Gold,1964-03-14,83,true
+座頭市あばれ火祭り,Zatôichi Fire Festival,Zatôichi Abare-hi Matsuri,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-goes-to-the-fire-festival-1970/posters/zatoichi-goes-to-the-fire-festival-1970.jpg,zatoichi-goes-to-the-fire-festival-1970,Zatoichi Goes to the Fire Festival,1970-08-12,96,true
+座頭市海を渡る,Zatôichi Across the Sea,Zatôichi Umiwowataru,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichis-pilgrimage-1966/posters/zatoichis-pilgrimage-1966.jpg,zatoichis-pilgrimage-1966,Zatoichi's Pilgrimage,1966-08-13,82,true
+進撃の巨人,Attack on Titan,Shingeki No Kyojin,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/attack-on-titan-2015/posters/attack-on-titan-2015.jpg,attack-on-titan-2015,Attack on Titan,2015-08-01,98,true
+バトル・ロワイアルII <ruby>鎮魂歌<rt>レクイエム</rt></ruby>,Battle Royale II Requiem,Batoru Rowaiaru II Chinkonka (Rekuiemu),https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/battle-royale-ii-requiem-2003/posters/battle-royale-ii-requiem-2003.jpg,battle-royale-ii-requiem-2003,Battle Royale II: Requiem,2003-07-05,133,true
+るろうに剣心 伝説の最期編,Rurouni Kenshin The End of the Legend,Rurôni Kenshin Densetsu No Saigo-hen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rurouni-kenshin-the-legend-ends-2014/posters/rurouni-kenshin-the-legend-ends-2014.jpg,rurouni-kenshin-the-legend-ends-2014,Rurouni Kenshin: The Legend Ends,2014-09-13,135,true
+本格科学冒険映画 20世紀少年 第2章 最後の希望,Real Science Adventure Movie 20th Century Boys Chapter 2 Last Hope,Honkaku Kagaku Bôken Eiga Nijû Seiki Shônen Dai Ni-Shô Saigo No Kibô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/20th-century-boys-2-the-last-hope-2009/posters/20th-century-boys-the-last-hope-2009.jpg,20th-century-boys-2-the-last-hope-2009,20th Century Boys 2: The Last Hope,2009-01-31,139,true
+万能鑑定士Q -モナ・リザの瞳-,All-Round Appraiser Q Eyes of Mona Lisa,Hon'nô Kanetei-Shi Q Mona Riza No Hitomi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/all-round-appraiser-q-the-eyes-of-mona-lisa-2014/posters/all-round-appraiser-q-the-eyes-of-mona-lisa-2014.jpg,all-round-appraiser-q-the-eyes-of-mona-lisa-2014,All-Round Appraiser Q: The Eyes of Mona Lisa,2014-05-31,119,true
+ALWAYS 三丁目の夕日,Always Sunset on Third Street,Always Sanchôme No Yûhi,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/always-sunset-on-third-street-2005/posters/always-2005.jpg,always-sunset-on-third-street-2005,Always: Sunset on Third Street,2005-11-05,133,true
+大坂城物語,Osaka Castle Story,Ôsakajô Monogatari,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/daredevil-in-the-castle-1961/posters/daredevil-in-the-castle-1961.jpg,daredevil-in-the-castle-1961,Daredevil in the Castle,1961-01-03,95,true
+デスノート the Last name,Death Note The Last Name,Desu Nôto The Last Name,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/death-note-the-last-name-2006/posters/death-note-the-last-name-2006.jpg,death-note-the-last-name-2006,Death Note: The Last Name,2006-11-03,140,true
+ゴジラ・エビラ・モスラ 南海の大決闘,Godzilla Ebirah Mothra Great Duel in the South Seas,Gojira Ebira Mosura Nankai No Daikettô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ebirah-horror-of-the-deep-1966/posters/godzilla-vs-the-sea-monster-1966.jpg,ebirah-horror-of-the-deep-1966,"Ebirah, Horror of the Deep",1966-12-17,87,true
+エスパイ,ESPY,Esupai,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/espy-1974/posters/espy-1974.jpg,espy-1974,ESPY,1974-12-28,94,true
+永遠の<ruby>0<rt>ゼロ</rt></ruby>,Eternal Zero,Eien No Zero,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/eternal-zero-2013/posters/eternal-zero-2013.jpg,eternal-zero-2013,The Eternal Zero,2013-12-21,144,true
+海賊とよばれた男,The Man Called Pirate,Kaizoku To Yobareta Otoko,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/fueled-the-man-they-called-pirate-2016/posters/a-man-called-pirate-2016.jpg,fueled-the-man-they-called-pirate-2016,Fueled: The Man They Called Pirate,2016-12-10,145,true
+ガメラ3 <ruby>邪神<rt>イリス</rt></ruby>覚醒,Gamera 3 Evil God (Iris) Awakening,Gamera 3 Jashin (Irisu) Kakusei,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-3-revenge-of-iris-1999/posters/gamera-3-revenge-of-iris-1999.jpg,gamera-3-revenge-of-iris-1999,Gamera 3: Revenge of Iris,1999-03-06,108,true
+ガメラ 大怪獣空中決戦,Gamera Giant Monster Aerial Battle,Gamera Daikaijû Kûchû Kessen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-guardian-of-the-universe-1995/posters/gamera-the-guardian-of-the-universe-1995.jpg,gamera-guardian-of-the-universe-1995,Gamera: Guardian of the Universe,1995-03-11,95,true
+大怪獣決闘 ガメラ対バルゴン,Giant Monster Duel Gamera vs. Barugon,Daikaijû Kettô Gamera Tai Barugon,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-vs-barugon-1966/posters/gamera-vs-barugon-1966.jpg,gamera-vs-barugon-1966,Gamera vs. Barugon,1966-04-17,101,true
+ガメラ対宇宙怪獣バイラス,Gamera vs. Space Monster Viras,Gamera Tai Uchû Kaijû Bairasu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gamera-vs-viras-1968/posters/gamera-vs-viras-1968.jpg,gamera-vs-viras-1968,Gamera vs. Viras,1968-03-20,72,true
+蒼き狼 地果て海尽きるまで,Blue Wolf To the Ends of the Earth and Sea,Aoki Ôkami Chi Hate Umi Tsukiru Made,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/genghis-khan-to-the-ends-of-the-earth-and-sea-2007/posters/genghis-khan-to-the-ends-of-the-earth-and-sea-2007.jpg,genghis-khan-to-the-ends-of-the-earth-and-sea-2007,Genghis Khan: To the Ends of the Earth and Sea,2007-03-03,136,true
+昆虫大戦争,Insect Great War,Konchû Daisensô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/genocide-1968/posters/genocide-1968.jpg,genocide-1968,Genocide,1968-11-09,84,true
+三大怪獣 地球最大の決戦,Three Giant Monsters,San Daikaijû Chikyû Saidai No Kessen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/ghidorah-the-three-headed-monster-1964/posters/ghidorah-the-three-headed-monster-1964.jpg,ghidorah-the-three-headed-monster-1964,"Ghidorah, the Three-Headed Monster",1964-12-20,93,true
+神の左手悪魔の右手,God's Left Hand Devil's Right Hand,Kami No Hidarite Akuma No Migite,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gods-left-hand-devils-right-hand-2006/posters/gods-left-hand-devils-right-hand-2006.jpg,gods-left-hand-devils-right-hand-2006,"God's Left Hand, Devil's Right Hand",2006-07-22,95,true
+ゴジラ,Godzilla,Gojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-1954/posters/godzilla-1954.jpg,godzilla-1954,Godzilla,1954-11-03,97,true
+ゴジラ2000 ミレニアム,Godzilla 2000 Millennium,Gojira Ni-sen Mireniamu,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-2000-millennium-1999/posters/godzilla-2000-1999.jpg,godzilla-2000-millennium-1999,Godzilla 2000: Millennium,1999-12-11,108,true
+ゴジラ対メカゴジラ,Godzilla vs. Mechagodzilla,Gojira Tai Mekagojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-mechagodzilla-1974/posters/godzilla-vs-the-cosmic-monster-1974.jpg,godzilla-vs-mechagodzilla-1974,Godzilla vs. Mechagodzilla,1974-03-21,84,true
+ゴジラvsメカゴジラ,Godzilla vs Mechagodzilla,Gojira vs Mekagojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/godzilla-vs-mechagodzilla-ii-1993/posters/godzilla-vs-mechagodzilla-1993.jpg,godzilla-vs-mechagodzilla-ii-1993,Godzilla vs. Mechagodzilla II,1993-12-11,108,true
+影武者,Shadow Warrior,Kagemusha,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/kagemusha-1980/posters/kagemusha-1980.jpg,kagemusha-1980,Kagemusha,1980-04-26,179,true
+仮面ライダー THE FIRST,Masked Rider The First,Kamen Raidâ The First,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/kamen-rider-the-first-2005/posters/masked-rider-the-first-2005.jpg,kamen-rider-the-first-2005,Kamen Rider: The First,2005-11-05,90,true
+キングコングの逆襲,King Kong Strikes Back,Kingukongu No Gyakushû,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/king-kong-escapes-1967/posters/king-kong-escapes-1967.jpg,king-kong-escapes-1967,King Kong Escapes,1967-07-22,104,true
+呪いの館 血を吸う眼,Cursed Mansion Bloodthirsty Eyes,Noroi No Yakata Chiwosu Me,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/lake-of-dracula-1971/posters/lake-of-dracula-1971.jpg,lake-of-dracula-1971,Lake of Dracula,1971-06-16,82,true
+図書館戦争-THE LAST MISSION-,Library War The Last Mission,Toshokan Sensô The Last Mission,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/library-wars-the-last-mission-2015/posters/library-wars-the-last-mission-2015.jpg,library-wars-the-last-mission-2015,Library Wars: The Last Mission,2015-10-10,120,true
+吸血髑髏船,Blood Skeleton Ship,Kyûketsu Dokurosen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/living-skeleton-1968/posters/living-skeleton-1968.jpg,living-skeleton-1968,The Living Skeleton,1968-11-09,81,true
+マタンゴ,Matango,Matango,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/matango-1963/posters/matango-1963.jpg,matango-1963,Matango,1963-08-11,89,true
+モスラ対ゴジラ,Mothra vs. Godzilla,Mosura Tai Gojira,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/mothra-vs-godzilla-1964/posters/mothra-vs-godzilla-1964.jpg,mothra-vs-godzilla-1964,Mothra vs. Godzilla,1964-04-29,89,true
+風の谷のナウシカ,Nausicaä of the Valley of the Wind,Kaze No Tani No Naushika,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/nausicaa-of-the-valley-of-the-wind-1984/posters/nausicaa-of-the-valley-of-the-wind-1984.jpg,nausicaa-of-the-valley-of-the-wind-1984,Nausicaä of the Valley of the Wind,1984-03-11,116,true
+ヤマトタケル,Yamato Takeru,Yamato Takeru,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/orochi-the-eight-headed-dragon-1994/posters/yamato-takeru-1994.jpg,orochi-the-eight-headed-dragon-1994,"Orochi, the Eight-Headed Dragon",1994-07-09,103,true
+寄生獣,Parasite,Kiseijû,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/parasyte-part-1-2014/posters/parasyte-2014.jpg,parasyte-part-1-2014,Parasyte: Part 1,2014-11-29,109,true
+修羅雪姫,Lady Snowblood,Shûra Yukihime,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/princess-blade-2001/posters/princess-blade-2001.jpg,princess-blade-2001,The Princess Blade,2001-12-15,93,true
+ノストラダムスの大予言,Great Prophecy of Nostradamus,Nosutoradamusu No Daiyogen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/prophecies-of-nostradamus-1974/posters/prophecies-of-nostradamus-1974.jpg,prophecies-of-nostradamus-1974,Prophecies of Nostradamus,1974-08-03,114,true
+モスラ2 海底の大決戦,Mothra 2 Undersea Battle,Mosura 2 Kaitei No Daisakusen,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rebirth-of-mothra-ii-1997/posters/rebirth-of-mothra-2-1997.jpg,rebirth-of-mothra-ii-1997,Rebirth of Mothra II,1997-12-13,100,true
+モスラ3 キングギドラ来襲,Mothra 3 King Ghidorah Invades,Mosura 3 Kingugidora Raishû,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/rebirth-of-mothra-iii-1998/posters/rebirth-of-mothra-3-1998.jpg,rebirth-of-mothra-iii-1998,Rebirth of Mothra III,1998-12-12,100,true
+宇宙大怪獣ギララ,Giant Space Monster Guilala,Uchû Daikaijû Girara,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/x-from-outer-space-1967/posters/x-from-outer-space-1967.jpg,x-from-outer-space-1967,The X from Outer Space,1967-03-25,88,true
+座頭市逆手斬り,Zatôichi Reverse Slash,Zatôichi Gyakute Kiri,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-and-the-doomed-man-1965/posters/zatoichi-and-the-doomed-man-1965.jpg,zatoichi-and-the-doomed-man-1965,Zatoichi and the Doomed Man,1965-09-18,78,true
+座頭市血煙り街道,Zatôichi Blood Smoke Road,Zatôichi Chikemurikaidô,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-challenged-1967/posters/zatoichi-challenged-1967.jpg,zatoichi-challenged-1967,Zatoichi Challenged,1967-12-30,87,true
+新座頭市・破れ！唐人剣,New Zatôichi Slash! Chinese Sword,Shin Zatôichi Yabure! Tôjinken,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/zatoichi-meets-the-one-armed-swordsman-1971/posters/zatoichi-meets-the-one-armed-swordsman-1971.jpg,zatoichi-meets-the-one-armed-swordsman-1971,Zatoichi Meets the One-Armed Swordsman,1971-01-13,94,true
+,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/twilight-of-honor-1963/posters/MV5BYTY0MmRhNDAtYmNjYi00NGVhLWFlNDAtMDRkZDFjZjEwODNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg?t=2024-10-28T01%3A38%3A12.194Z,twilight-of-honor-1963,Twilight of Honor,1963-10-16,104,false
+,,,https://tcpyguvhxiihxcocbhoh.supabase.co/storage/v1/object/public/godzilla-cineaste-public/content/films/gray-sunset-1985/posters/Hana%20Ichimonme%201985.jpg,gray-sunset-1985,Gray Sunset,1985-10-10,122,false
+"""
+
+csv
+|> CSV.parse_string(skip_headers: false)
+|> Enum.map(fn [
+                 original_title,
+                 original_title_translation,
+                 original_title_transliteration,
+                 poster_url,
+                 slug,
+                 title,
+                 release_date,
+                 runtime,
+                 showcased
+               ] ->
+  %{
+    original_title: original_title,
+    original_title_translation: original_title_translation,
+    original_title_transliteration: original_title_transliteration,
+    poster_url: poster_url,
+    slug: slug,
+    title: title,
+    release_date: release_date,
+    runtime: runtime,
+    showcased: showcased
+  }
+end)
+|> Ash.bulk_create!(Cineaste.Library.Film, :create, return_errors?: true)
