@@ -62,6 +62,7 @@ defmodule Cineaste.MixProject do
       {:dns_cluster, "~> 0.1.1"},
       {:bandit, "~> 1.5"},
       {:igniter, "~> 0.5.31", only: [:dev]},
+      {:nimble_csv, "~> 1.2"},
       {:daisyui, github: "saadeghi/daisyui", tag: "v5.0.0", app: false, compile: false, depth: 1},
       {:tailwindcss_typography,
        github: "tailwindlabs/tailwindcss-typography",
