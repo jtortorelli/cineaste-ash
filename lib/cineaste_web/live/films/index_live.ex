@@ -1,4 +1,4 @@
-defmodule CineasteWeb.FilmsLive do
+defmodule CineasteWeb.Films.IndexLive do
   use CineasteWeb, :live_view
 
   alias Cineaste.Library

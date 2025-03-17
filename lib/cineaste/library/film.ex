@@ -49,7 +49,7 @@ defmodule Cineaste.Library.Film do
   end
 
   calculations do
-    calculate :sort_title, :string, Cineaste.Library.Calculations.SortTitle
+    calculate :sort_title, :string, Cineaste.Library.Calculations.SortTitle, public?: true
   end
 
   identities do

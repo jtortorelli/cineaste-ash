@@ -9,6 +9,10 @@ defmodule Cineaste.Library.FilmAlias do
     repo Cineaste.Repo
   end
 
+  actions do
+    defaults [:read]
+  end
+
   attributes do
     uuid_primary_key :id
 

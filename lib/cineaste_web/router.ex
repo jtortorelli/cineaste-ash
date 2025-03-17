@@ -19,7 +19,7 @@ defmodule CineasteWeb.Router do
 
     live "/", IndexLive
     live "/about", AboutLive
-    live "/films", FilmsLive
+    live "/films", Films.IndexLive
   end
 
   # Other scopes may use custom stacks.
@@ -38,6 +38,9 @@ defmodule CineasteWeb.Router do
 
     scope "/dev" do
       pipe_through :browser
+
+      live "/admin/films", CineasteWeb.Admin.Films.IndexLive
+      live "/admin/films/:slug", CineasteWeb.Admin.Films.ShowLive
 
       live_dashboard "/dashboard", metrics: CineasteWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview

@@ -32,6 +32,7 @@ defmodule Cineaste.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
+      {:ash_phoenix, "~> 2.0"},
       {:ash_postgres, "~> 2.0"},
       {:sourceror, "~> 1.7", only: [:dev, :test]},
       {:ash, "~> 3.0"},
