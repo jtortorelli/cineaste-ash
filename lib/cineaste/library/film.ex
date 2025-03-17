@@ -25,6 +25,20 @@ defmodule Cineaste.Library.Film do
         :showcased
       ]
     end
+
+    update :update do
+      accept [
+        :original_title,
+        :original_title_transliteration,
+        :original_title_translation,
+        :poster_url,
+        :slug,
+        :title,
+        :release_date,
+        :runtime,
+        :showcased
+      ]
+    end
   end
 
   attributes do

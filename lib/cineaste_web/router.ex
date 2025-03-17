@@ -40,7 +40,9 @@ defmodule CineasteWeb.Router do
       pipe_through :browser
 
       live "/admin/films", CineasteWeb.Admin.Films.IndexLive
+      live "/admin/films/new", CineasteWeb.Admin.Films.FormLive
       live "/admin/films/:slug", CineasteWeb.Admin.Films.ShowLive
+      live "/admin/films/:slug/edit", CineasteWeb.Admin.Films.FormLive
 
       live_dashboard "/dashboard", metrics: CineasteWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview
