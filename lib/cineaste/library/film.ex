@@ -44,6 +44,10 @@ defmodule Cineaste.Library.Film do
     update_timestamp :updated_at
   end
 
+  relationships do
+    has_many :film_aliases, Cineaste.Library.FilmAlias
+  end
+
   calculations do
     calculate :sort_title, :string, Cineaste.Library.Calculations.SortTitle
   end

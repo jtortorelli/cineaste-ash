@@ -6,5 +6,7 @@ defmodule Cineaste.Library do
     resource Cineaste.Library.Film do
       define :read_films, action: :read
     end
+
+    resource Cineaste.Library.FilmAlias
   end
 end
