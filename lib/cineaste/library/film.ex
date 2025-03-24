@@ -24,6 +24,9 @@ defmodule Cineaste.Library.Film do
         :runtime,
         :showcased
       ]
+
+      argument :aliases, {:array, :map}
+      change manage_relationship(:aliases, type: :direct_control)
     end
 
     update :update do
@@ -38,6 +41,10 @@ defmodule Cineaste.Library.Film do
         :runtime,
         :showcased
       ]
+
+      require_atomic? false
+      argument :aliases, {:array, :map}
+      change manage_relationship(:aliases, type: :direct_control)
     end
   end
 
@@ -59,7 +66,7 @@ defmodule Cineaste.Library.Film do
   end
 
   relationships do
-    has_many :film_aliases, Cineaste.Library.FilmAlias
+    has_many :aliases, Cineaste.Library.FilmAlias, sort: [alias: :asc]
   end
 
   calculations do

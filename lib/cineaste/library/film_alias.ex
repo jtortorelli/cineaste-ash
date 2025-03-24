@@ -7,10 +7,24 @@ defmodule Cineaste.Library.FilmAlias do
   postgres do
     table "film_aliases"
     repo Cineaste.Repo
+
+    references do
+      reference :film, on_delete: :delete
+    end
   end
 
   actions do
-    defaults [:read]
+    defaults [:read, :destroy]
+
+    create :create do
+      primary? true
+      accept [:alias, :context, :film_id]
+    end
+
+    update :update do
+      primary? true
+      accept [:alias, :context]
+    end
   end
 
   attributes do
