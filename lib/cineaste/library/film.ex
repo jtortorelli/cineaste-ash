@@ -12,6 +12,14 @@ defmodule Cineaste.Library.Film do
   actions do
     defaults [:read]
 
+    read :search do
+      argument :query, :ci_string do
+        constraints allow_empty?: true
+        default ""
+      end
+      filter expr(contains(title, ^arg(:query)))
+    end
+
     create :create do
       accept [
         :original_title,
