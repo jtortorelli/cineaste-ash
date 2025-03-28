@@ -17,6 +17,7 @@ defmodule Cineaste.Library.Film do
         constraints allow_empty?: true
         default ""
       end
+
       filter expr(contains(title, ^arg(:query)))
     end
 
@@ -75,6 +76,7 @@ defmodule Cineaste.Library.Film do
 
   relationships do
     has_many :aliases, Cineaste.Library.FilmAlias, sort: [alias: :asc]
+    has_many :film_series_entries, Cineaste.Library.FilmSeriesEntry
   end
 
   calculations do
