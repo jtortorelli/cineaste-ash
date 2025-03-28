@@ -1,0 +1,28 @@
+<div class="flex flex-col h-screen justify-between">
+  <div>
+    <header>
+      <div class="navbar bg-base-100 shadow-sm font-content flex gap-3">
+        <div>
+          <a class="link link-hover" href="/dev/admin">godzillacineaste.net/admin</a>
+        </div>
+        <div>
+          <a class="link link-hover" href="/dev/admin/films">films</a>
+        </div>
+      </div>
+    </header>
+    <main class="px-4 py-20 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl">
+        <.flash_group flash={@flash} />
+        {@inner_content}
+      </div>
+    </main>
+  </div>
+  <div>
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
+      <aside class="font-content">
+        <p>Est. 2016</p>
+        <p>James Tortorelli</p>
+      </aside>
+    </footer>
+  </div>
+</div>

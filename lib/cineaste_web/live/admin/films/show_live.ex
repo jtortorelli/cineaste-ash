@@ -1,5 +1,5 @@
 defmodule CineasteWeb.Admin.Films.ShowLive do
-  use CineasteWeb, :live_view
+  use CineasteWeb, :admin_live_view
 
   import CineasteWeb.CoreComponents
 

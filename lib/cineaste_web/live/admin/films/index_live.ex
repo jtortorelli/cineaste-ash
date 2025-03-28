@@ -1,5 +1,5 @@
 defmodule CineasteWeb.Admin.Films.IndexLive do
-  use CineasteWeb, :live_view
+  use CineasteWeb, :admin_live_view
 
   def mount(_params, _session, socket) do
     {:ok, socket}

@@ -1,5 +1,5 @@
 defmodule CineasteWeb.Admin.Films.FormLive do
-  use CineasteWeb, :live_view
+  use CineasteWeb, :admin_live_view
 
   def mount(%{"slug" => slug}, _session, socket) do
     film = Cineaste.Library.get_film_by_slug!(slug, load: [:aliases])
