@@ -10,13 +10,11 @@ defmodule CineasteWeb.Admin.Films.ShowLive do
 
   def render(assigns) do
     ~H"""
-    <div class="prose prose-headings:font-display prose-p:font-content">
+    <div>
       <h1>{@film.title}</h1>
-      <.link navigate={~p"/dev/admin/films/#{@film.slug}/edit"}>
-        <button class="btn">
-          <.icon name="tabler-pencil" /> Edit
-        </button>
-      </.link>
+      <a class="btn" href={~p"/dev/admin/films/#{@film.slug}/edit"}>
+        <.icon name="tabler-pencil" /> Edit
+      </a>
       <p>
         Showcased:
         <span :if={@film.showcased}><.icon name="tabler-circle-check-filled" /></span><span :if={

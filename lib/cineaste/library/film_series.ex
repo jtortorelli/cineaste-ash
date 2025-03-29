@@ -14,6 +14,7 @@ defmodule Cineaste.Library.FilmSeries do
 
     create :create do
       accept [
+        :name,
         :slug
       ]
 
@@ -23,8 +24,10 @@ defmodule Cineaste.Library.FilmSeries do
 
     update :update do
       accept [
+        :name,
         :slug
       ]
+
       require_atomic? false
       argument :entries, {:array, :map}
       change manage_relationship(:entries, type: :direct_control, order_is_key: :entry_number)
@@ -33,6 +36,7 @@ defmodule Cineaste.Library.FilmSeries do
 
   attributes do
     uuid_primary_key :id
+    attribute :name, :string, allow_nil?: false
     attribute :slug, :string, allow_nil?: false
 
     create_timestamp :inserted_at

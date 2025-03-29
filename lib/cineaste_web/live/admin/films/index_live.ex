@@ -19,6 +19,11 @@ defmodule CineasteWeb.Admin.Films.IndexLive do
 
   def render(assigns) do
     ~H"""
+    <div>
+      <a class="btn" href={~p"/dev/admin/films/new"}>
+        <.icon name="tabler-plus" /> New Film
+      </a>
+    </div>
     <.search_box query={@query_text} method="get" data-role="film-search" phx-submit="search" />
     <ul>
       <%= for film <- @films do %>
@@ -35,10 +40,10 @@ defmodule CineasteWeb.Admin.Films.IndexLive do
   def search_box(assigns) do
     ~H"""
     <form class="relative w-fit inline-block" {@rest}>
-      <.icon name="tabler-search" class="w-4 h-4 m-2 ml-3 absolute bg-base-content/50" />
+      <.icon name="tabler-search" />
       <label for="search-text" class="hidden">Search</label>
       <input
-        class="input input-bordered rounded-full input-sm pl-8 w-32 sm:w-48"
+        class="input input-bordered rounded-full pl-8 w-32 sm:w-48"
         name="query"
         id="search-text"
         placeholder="search films by name"

@@ -8,6 +8,11 @@ defmodule CineasteWeb.Admin.Films.FormLive do
     {:ok, assign(socket, form: to_form(form))}
   end
 
+  def mount(_params, _session, socket) do
+    form = Cineaste.Library.form_to_create_film()
+    {:ok, assign(socket, form: to_form(form))}
+  end
+
   def render(assigns) do
     ~H"""
     <.simple_form :let={form} for={@form} as={:form} phx-change="validate" phx-submit="save">

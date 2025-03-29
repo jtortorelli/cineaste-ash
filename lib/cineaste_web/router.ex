@@ -44,6 +44,11 @@ defmodule CineasteWeb.Router do
       live "/admin/films/:slug", CineasteWeb.Admin.Films.ShowLive
       live "/admin/films/:slug/edit", CineasteWeb.Admin.Films.FormLive
 
+      live "/admin/film-series", CineasteWeb.Admin.FilmSeries.IndexLive
+      live "/admin/film-series/new", CineasteWeb.Admin.FilmSeries.FormLive
+      live "/admin/film-series/:slug", CineasteWeb.Admin.FilmSeries.ShowLive
+      live "/admin/film-series/:slug/edit", CineasteWeb.Admin.FilmSeries.FormLive
+
       live_dashboard "/dashboard", metrics: CineasteWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview
     end
