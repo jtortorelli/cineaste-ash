@@ -2,7 +2,7 @@ defmodule CineasteWeb.Admin.FilmSeries.ShowLive do
   use CineasteWeb, :admin_live_view
 
   def mount(%{"slug" => slug}, _session, socket) do
-    film_series = Cineaste.Library.get_film_series_by_slug!(slug, load: [entries: :film])
+    film_series = Cineaste.Library.get_film_series_by_slug!(slug, load: [entries: [:film, :number]])
 
     {:ok, assign(socket, film_series: film_series)}
   end
@@ -21,7 +21,7 @@ defmodule CineasteWeb.Admin.FilmSeries.ShowLive do
         <p>No films in this series</p>
       </div>
       <%= for entry <- @film_series.entries do %>
-        <p><a href={~p"/dev/admin/films/#{entry.film.slug}"}>{entry.film.title}</a></p>
+        <p><a href={~p"/dev/admin/films/#{entry.film.slug}"}>{entry.number}. {entry.film.title}</a></p>
       <% end %>
     </div>
     """

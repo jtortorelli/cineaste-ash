@@ -19,7 +19,7 @@ defmodule Cineaste.Library.FilmSeries do
       ]
 
       argument :entries, {:array, :map}
-      change manage_relationship(:entries, type: :direct_control, order_is_key: :entry_number)
+      change manage_relationship(:entries, type: :direct_control, order_is_key: :order)
     end
 
     update :update do
@@ -30,7 +30,7 @@ defmodule Cineaste.Library.FilmSeries do
 
       require_atomic? false
       argument :entries, {:array, :map}
-      change manage_relationship(:entries, type: :direct_control, order_is_key: :entry_number)
+      change manage_relationship(:entries, type: :direct_control, order_is_key: :order)
     end
   end
 
@@ -44,7 +44,7 @@ defmodule Cineaste.Library.FilmSeries do
   end
 
   relationships do
-    has_many :entries, Cineaste.Library.FilmSeriesEntry, sort: [entry_number: :asc]
+    has_many :entries, Cineaste.Library.FilmSeriesEntry, sort: [order: :asc]
   end
 
   identities do

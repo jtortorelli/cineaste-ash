@@ -7,6 +7,11 @@ defmodule Cineaste.Library.FilmSeriesEntry do
   postgres do
     table "film_series_entries"
     repo Cineaste.Repo
+
+    references do
+      reference :film_series, on_delete: :delete
+      reference :film, on_delete: :delete
+    end
   end
 
   actions do
@@ -14,8 +19,9 @@ defmodule Cineaste.Library.FilmSeriesEntry do
 
     create :create do
       primary? true
+
       accept [
-        :entry_number,
+        :order,
         :film_id,
         :film_series_id
       ]
@@ -23,14 +29,14 @@ defmodule Cineaste.Library.FilmSeriesEntry do
 
     update :update do
       primary? true
-      accept [:entry_number]
+      accept [:order]
     end
   end
 
   attributes do
     uuid_primary_key :id
 
-    attribute :entry_number, :integer, allow_nil?: false
+    attribute :order, :integer, allow_nil?: false
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
@@ -39,6 +45,10 @@ defmodule Cineaste.Library.FilmSeriesEntry do
   relationships do
     belongs_to :film, Cineaste.Library.Film, allow_nil?: false
     belongs_to :film_series, Cineaste.Library.FilmSeries, allow_nil?: false
+  end
+
+  calculations do
+    calculate :number, :integer, expr(order + 1)
   end
 
   identities do
