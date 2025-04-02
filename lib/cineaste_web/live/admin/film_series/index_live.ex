@@ -6,7 +6,7 @@ defmodule CineasteWeb.Admin.FilmSeries.IndexLive do
   end
 
   def handle_params(_params, _url, socket) do
-    film_series = Cineaste.Library.read_film_series!()
+    film_series = Cineaste.Library.read_film_series!(query: [sort_input: "name"])
 
     socket =
       socket

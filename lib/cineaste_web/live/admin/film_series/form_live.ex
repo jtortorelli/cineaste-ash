@@ -5,34 +5,21 @@ defmodule CineasteWeb.Admin.FilmSeries.FormLive do
     film_series = Cineaste.Library.get_film_series_by_slug!(slug, load: [entries: [:film]])
     form = Cineaste.Library.form_to_update_film_series(film_series)
 
-    films = Cineaste.Library.read_films!(query: [sort_input: "sort_title"])
-
-    film_options =
-      Enum.map(films, fn film ->
-        {"#{film.title} (#{film.release_date.year})", film.id}
-      end)
-
     socket =
       socket
       |> assign(:form, to_form(form))
-      |> assign(:film_options, film_options)
+      |> assign(:film_options, film_options())
 
     {:ok, socket}
   end
 
   def mount(_params, _session, socket) do
     form = Cineaste.Library.form_to_create_film_series()
-    films = Cineaste.Library.read_films!(query: [sort_input: "sort_title"])
-
-    film_options =
-      Enum.map(films, fn film ->
-        {"#{film.title} (#{film.release_date.year})", film.id}
-      end)
 
     socket =
       socket
       |> assign(:form, to_form(form))
-      |> assign(:film_options, film_options)
+      |> assign(:film_options, film_options())
 
     {:ok, socket}
   end
@@ -66,7 +53,7 @@ defmodule CineasteWeb.Admin.FilmSeries.FormLive do
               <.icon name="tabler-menu-2" class="handle cursor-pointer" />
             </td>
             <td>
-              <.input field={entry_form[:film_id]} type="select" options={@film_options} />
+              <.live_select field={entry_form[:film_id]} options={@film_options} />
             </td>
             <td>
               <a
@@ -126,5 +113,19 @@ defmodule CineasteWeb.Admin.FilmSeries.FormLive do
         socket = socket |> put_flash(:error, "Could not save film series") |> assign(:form, form)
         {:noreply, socket}
     end
+  end
+
+  def handle_event("live_select_change", %{"text" => text, "id" => live_select_id}, socket) do
+    send_update(LiveSelect.Component, id: live_select_id, options: film_options(text))
+
+    {:noreply, socket}
+  end
+
+  defp film_options(query_text \\ "") do
+    films = Cineaste.Library.search_films!(query_text, query: [sort_input: "sort_title"])
+
+    Enum.map(films, fn film ->
+      {"#{film.title} (#{film.release_date.year})", film.id}
+    end)
   end
 end

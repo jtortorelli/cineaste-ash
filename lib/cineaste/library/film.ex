@@ -18,7 +18,7 @@ defmodule Cineaste.Library.Film do
         default ""
       end
 
-      filter expr(contains(title, ^arg(:query)))
+      filter expr(contains(fragment("unaccent(title)"), ^arg(:query)))
     end
 
     create :create do

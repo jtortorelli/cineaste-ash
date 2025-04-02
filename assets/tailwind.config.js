@@ -10,7 +10,8 @@ module.exports = {
   content: [
     "./js/**/*.js",
     "../lib/cineaste_web.ex",
-    "../lib/cineaste_web/**/*.*ex"
+    "../lib/cineaste_web/**/*.*ex",
+    '../deps/live_select/lib/live_select/component.*ex',
   ],
   theme: {
     extend: {

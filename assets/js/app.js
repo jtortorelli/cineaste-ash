@@ -22,6 +22,7 @@ import { Socket } from "phoenix"
 import { LiveSocket } from "phoenix_live_view"
 import topbar from "../vendor/topbar"
 import Sortable from "../vendor/Sortable.min"
+import live_select from "live_select"
 
 let csrfToken = document.querySelector("meta[name='csrf-token']").getAttribute("content")
 
@@ -47,7 +48,7 @@ Hooks.Sortable = {
 
 let liveSocket = new LiveSocket("/live",
   Socket,
-  { longPollFallbackMs: 2500, params: { _csrf_token: csrfToken }, hooks: Hooks }
+  { longPollFallbackMs: 2500, params: { _csrf_token: csrfToken }, hooks: { ...Hooks, ...live_select } }
 )
 
 // connect if there are any LiveViews on the page

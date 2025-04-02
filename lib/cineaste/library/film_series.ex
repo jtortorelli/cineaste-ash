@@ -36,7 +36,7 @@ defmodule Cineaste.Library.FilmSeries do
 
   attributes do
     uuid_primary_key :id
-    attribute :name, :string, allow_nil?: false
+    attribute :name, :string, allow_nil?: false, public?: true
     attribute :slug, :string, allow_nil?: false
 
     create_timestamp :inserted_at

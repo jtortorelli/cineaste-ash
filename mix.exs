@@ -77,7 +77,8 @@ defmodule Cineaste.MixProject do
        sparse: "icons",
        app: false,
        compile: false,
-       depth: 1}
+       depth: 1},
+      {:live_select, "~> 1.0"}
     ]
   end
 
