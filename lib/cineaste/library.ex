@@ -20,5 +20,8 @@ defmodule Cineaste.Library do
     end
 
     resource Cineaste.Library.FilmSeriesEntry
+    resource Cineaste.Library.Studio
+    resource Cineaste.Library.StudioAlias
+    resource Cineaste.Library.FilmStudio
   end
 end

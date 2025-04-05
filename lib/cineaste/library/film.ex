@@ -77,6 +77,7 @@ defmodule Cineaste.Library.Film do
   relationships do
     has_many :aliases, Cineaste.Library.FilmAlias, sort: [alias: :asc]
     has_many :film_series_entries, Cineaste.Library.FilmSeriesEntry
+    has_many :studios, Cineaste.Library.FilmStudio
   end
 
   calculations do
