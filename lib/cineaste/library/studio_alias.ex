@@ -9,6 +9,24 @@ defmodule Cineaste.Library.StudioAlias do
     repo Cineaste.Repo
   end
 
+  actions do
+    defaults [:read, :destroy]
+
+    create :create do
+      primary? true
+
+      accept [
+        :alias,
+        :studio_id
+      ]
+    end
+
+    update :update do
+      primary? true
+      accept [:alias]
+    end
+  end
+
   attributes do
     uuid_primary_key :id
 

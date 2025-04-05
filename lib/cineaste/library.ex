@@ -20,7 +20,14 @@ defmodule Cineaste.Library do
     end
 
     resource Cineaste.Library.FilmSeriesEntry
-    resource Cineaste.Library.Studio
+
+    resource Cineaste.Library.Studio do
+      define :search_studios, action: :search, args: [:query]
+      define :get_studio_by_slug, action: :read, get_by: :slug
+      define :create_studio, action: :create
+      define :update_studio, action: :update
+    end
+
     resource Cineaste.Library.StudioAlias
     resource Cineaste.Library.FilmStudio
   end
