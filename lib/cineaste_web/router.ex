@@ -39,6 +39,8 @@ defmodule CineasteWeb.Router do
     scope "/dev" do
       pipe_through :browser
 
+      live "/admin", CineasteWeb.Admin.Films.IndexLive
+
       live "/admin/films", CineasteWeb.Admin.Films.IndexLive
       live "/admin/films/new", CineasteWeb.Admin.Films.FormLive
       live "/admin/films/:slug", CineasteWeb.Admin.Films.ShowLive
@@ -48,6 +50,11 @@ defmodule CineasteWeb.Router do
       live "/admin/film-series/new", CineasteWeb.Admin.FilmSeries.FormLive
       live "/admin/film-series/:slug", CineasteWeb.Admin.FilmSeries.ShowLive
       live "/admin/film-series/:slug/edit", CineasteWeb.Admin.FilmSeries.FormLive
+
+      live "/admin/studios", CineasteWeb.Admin.Studios.IndexLive
+      live "/admin/studios/new", CineasteWeb.Admin.Studios.FormLive
+      live "/admin/studios/:slug", CineasteWeb.Admin.Studios.ShowLive
+      live "/admin/studios/:slug/edit", CineasteWeb.Admin.Studios.FormLive
 
       live_dashboard "/dashboard", metrics: CineasteWeb.Telemetry
       forward "/mailbox", Plug.Swoosh.MailboxPreview
