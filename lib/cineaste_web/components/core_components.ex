@@ -681,9 +681,12 @@ defmodule CineasteWeb.CoreComponents do
   end
 
   def live_select(%{field: %Phoenix.HTML.FormField{} = field} = assigns) do
-    assigns = assign(assigns, :errors, Enum.map(field.errors, &translate_error(&1)))
-
     live_select_opts = assigns_to_attributes(assigns, [:errors, :label])
+
+    assigns =
+      assigns
+      |> assign(:errors, Enum.map(field.errors, &translate_error(&1)))
+      |> assign(:live_select_opts, live_select_opts)
 
     ~H"""
     <div phx-feedback-for={@field.name}>
@@ -696,7 +699,7 @@ defmodule CineasteWeb.CoreComponents do
           "border-zinc-300 focus:border-zinc-400 focus:ring-zinc-800/5",
           @errors != [] && "border-rose-400 focus:border-rose-400 focus:ring-rose-400/10"
         ]}
-        {live_select_opts}
+        {@live_select_opts}
       />
 
       <.error :for={msg <- @errors}>{msg}</.error>
