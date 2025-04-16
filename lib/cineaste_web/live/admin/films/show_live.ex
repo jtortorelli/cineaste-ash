@@ -4,7 +4,7 @@ defmodule CineasteWeb.Admin.Films.ShowLive do
   import CineasteWeb.CoreComponents
 
   def mount(%{"slug" => slug}, _session, socket) do
-    film = Cineaste.Library.get_film_by_slug!(slug, load: [:aliases])
+    film = Cineaste.Library.get_film_by_slug!(slug, load: [:aliases, :studios])
     {:ok, assign(socket, film: film)}
   end
 
@@ -37,6 +37,14 @@ defmodule CineasteWeb.Admin.Films.ShowLive do
       </div>
       <%= for alias <- @film.aliases do %>
         <p>{alias.alias} ({alias.context})</p>
+      <% end %>
+
+      <h2>Studios</h2>
+      <div :if={Enum.empty?(@film.studios)}>
+        <p>No studios</p>
+      </div>
+      <%= for studio <- @film.studios do %>
+        <p>{studio.display_name || studio.name}</p>
       <% end %>
     </div>
     """

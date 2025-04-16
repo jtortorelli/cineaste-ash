@@ -9,19 +9,25 @@ defmodule Cineaste.Library.FilmStudio do
     repo Cineaste.Repo
   end
 
-  attributes do
-    uuid_primary_key :id
+  actions do
+    defaults [:read, :destroy]
 
-    create_timestamp :inserted_at
-    update_timestamp :updated_at
+    create :create do
+      primary? true
+      accept [:film_id, :studio_id]
+    end
+
+    update :update do
+      primary? true
+      accept [:film_id, :studio_id]
+    end
+  end
+
+  attributes do
   end
 
   relationships do
-    belongs_to :film, Cineaste.Library.Film, allow_nil?: false
-    belongs_to :studio, Cineaste.Library.Studio, allow_nil?: false
-  end
-
-  identities do
-    identity :unique_studio_per_film, [:film_id, :studio_id]
+    belongs_to :film, Cineaste.Library.Film, primary_key?: true, allow_nil?: false
+    belongs_to :studio, Cineaste.Library.Studio, primary_key?: true, allow_nil?: false
   end
 end
