@@ -35,9 +35,9 @@ defmodule Cineaste.Library.Film do
       ]
 
       argument :aliases, {:array, :map}
-      argument :studios, {:array, :map}
+      argument :film_studios, {:array, :map}
       change manage_relationship(:aliases, type: :direct_control)
-      change manage_relationship(:studios, type: :append_and_remove)
+      change manage_relationship(:film_studios, type: :direct_control)
     end
 
     update :update do
@@ -55,9 +55,9 @@ defmodule Cineaste.Library.Film do
 
       require_atomic? false
       argument :aliases, {:array, :map}
-      argument :studios, {:array, :map}
+      argument :film_studios, {:array, :map}
       change manage_relationship(:aliases, type: :direct_control)
-      change manage_relationship(:studios, type: :append_and_remove)
+      change manage_relationship(:film_studios, type: :direct_control)
     end
   end
 
@@ -81,6 +81,7 @@ defmodule Cineaste.Library.Film do
   relationships do
     has_many :aliases, Cineaste.Library.FilmAlias, sort: [alias: :asc]
     has_many :film_series_entries, Cineaste.Library.FilmSeriesEntry
+    has_many :film_studios, Cineaste.Library.FilmStudio
 
     many_to_many :studios, Cineaste.Library.Studio do
       through Cineaste.Library.FilmStudio

@@ -2,7 +2,7 @@ defmodule CineasteWeb.Admin.Films.FormLive do
   use CineasteWeb, :admin_live_view
 
   def mount(%{"slug" => slug}, _session, socket) do
-    film = Cineaste.Library.get_film_by_slug!(slug, load: [:aliases, :studios])
+    film = Cineaste.Library.get_film_by_slug!(slug, load: [:aliases, film_studios: :studio])
     form = Cineaste.Library.form_to_update_film(film)
 
     socket =
@@ -96,10 +96,10 @@ defmodule CineasteWeb.Admin.Films.FormLive do
         </tr>
       </thead>
       <tbody>
-        <.inputs_for :let={studio_form} field={@form[:studios]}>
+        <.inputs_for :let={studio_form} field={@form[:film_studios]}>
           <tr data-id={studio_form.index}>
             <td>
-              <.live_select field={studio_form[:id]} options={@studio_options} />
+              <.live_select field={studio_form[:studio_id]} options={@studio_options} />
             </td>
             <td>
               <a
@@ -134,7 +134,7 @@ defmodule CineasteWeb.Admin.Films.FormLive do
 
   def handle_event("add-studio", _params, socket) do
     socket =
-      update(socket, :form, fn form -> AshPhoenix.Form.add_form(form, :studios, type: :read) end)
+      update(socket, :form, fn form -> AshPhoenix.Form.add_form(form, :film_studios) end)
 
     {:noreply, socket}
   end
