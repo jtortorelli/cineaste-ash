@@ -30,5 +30,6 @@ defmodule Cineaste.Library do
 
     resource Cineaste.Library.StudioAlias
     resource Cineaste.Library.FilmStudio
+    resource Cineaste.Library.Person
   end
 end

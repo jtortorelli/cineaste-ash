@@ -1,0 +1,38 @@
+defmodule Cineaste.Library.Person do
+  use Ash.Resource,
+    otp_app: :cineaste,
+    domain: Cineaste.Library,
+    data_layer: AshPostgres.DataLayer
+
+  postgres do
+    table "people"
+    repo Cineaste.Repo
+  end
+
+  attributes do
+    uuid_primary_key :id
+
+    attribute :slug, :string, allow_nil?: false
+    attribute :display_name, :string, allow_nil?: false
+    attribute :sort_name, :string
+    attribute :showcased, :boolean, default: false
+    attribute :disambig_chars, :string
+    attribute :profession, :string
+    attribute :avatar_url, :string
+    attribute :dob, :date
+    attribute :dob_resolution, :atom, constraints: [one_of: [:day, :month, :year, :unknown]]
+    attribute :birth_place, :string
+    attribute :dod, :date
+    attribute :dod_resolution, :atom, constraints: [one_of: [:day, :month, :year, :unknown]]
+    attribute :death_place, :string
+    attribute :cause_of_death, :string
+    attribute :japanese_name, :string
+
+    create_timestamp :inserted_at
+    update_timestamp :updated_at
+  end
+
+  identities do
+    identity :unique_slug_per_person, [:slug]
+  end
+end
