@@ -9,6 +9,50 @@ defmodule Cineaste.Library.Person do
     repo Cineaste.Repo
   end
 
+  actions do
+    defaults [:read]
+
+    create :create do
+      accept [
+        :slug,
+        :display_name,
+        :sort_name,
+        :showcased,
+        :disambig_chars,
+        :profession,
+        :avatar_url,
+        :dob,
+        :dob_resolution,
+        :birth_place,
+        :dod,
+        :dod_resolution,
+        :death_place,
+        :cause_of_death,
+        :japanese_name
+      ]
+    end
+
+    update :update do
+      accept [
+        :slug,
+        :display_name,
+        :sort_name,
+        :showcased,
+        :disambig_chars,
+        :profession,
+        :avatar_url,
+        :dob,
+        :dob_resolution,
+        :birth_place,
+        :dod,
+        :dod_resolution,
+        :death_place,
+        :cause_of_death,
+        :japanese_name
+      ]
+    end
+  end
+
   attributes do
     uuid_primary_key :id
 

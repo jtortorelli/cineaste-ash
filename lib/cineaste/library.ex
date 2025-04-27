@@ -30,6 +30,12 @@ defmodule Cineaste.Library do
 
     resource Cineaste.Library.StudioAlias
     resource Cineaste.Library.FilmStudio
-    resource Cineaste.Library.Person
+
+    resource Cineaste.Library.Person do
+      define :read_people, action: :read
+      define :update_person, action: :update
+      define :create_person, action: :create
+      define :get_person_by_slug, action: :read, get_by: :slug
+    end
   end
 end

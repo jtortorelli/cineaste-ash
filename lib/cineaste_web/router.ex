@@ -51,6 +51,11 @@ defmodule CineasteWeb.Router do
       live "/admin/film-series/:slug", CineasteWeb.Admin.FilmSeries.ShowLive
       live "/admin/film-series/:slug/edit", CineasteWeb.Admin.FilmSeries.FormLive
 
+      live "/admin/people", CineasteWeb.Admin.People.IndexLive
+      live "/admin/people/new", CineasteWeb.Admin.People.FormLive
+      live "/admin/people/:slug", CineasteWeb.Admin.People.ShowLive
+      live "/admin/people/:slug/edit", CineasteWeb.Admin.People.FormLive
+
       live "/admin/studios", CineasteWeb.Admin.Studios.IndexLive
       live "/admin/studios/new", CineasteWeb.Admin.Studios.FormLive
       live "/admin/studios/:slug", CineasteWeb.Admin.Studios.ShowLive
