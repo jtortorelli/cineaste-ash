@@ -7,7 +7,11 @@ defmodule CineasteWeb.Admin.Films.IndexLive do
 
   def handle_params(params, _url, socket) do
     query_text = Map.get(params, "q", "")
-    films = Cineaste.Library.search_films!(query_text, query: [sort_input: "sort_title"])
+
+    films =
+      Cineaste.Library.search_films!(query_text,
+        query: [sort_input: "sort_title"]
+      )
 
     socket =
       socket

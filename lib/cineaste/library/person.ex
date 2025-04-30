@@ -12,6 +12,20 @@ defmodule Cineaste.Library.Person do
   actions do
     defaults [:read]
 
+    read :search do
+      argument :query, :ci_string do
+        constraints allow_empty?: true
+        default ""
+      end
+
+      pagination offset?: true, required?: false
+
+      filter expr(
+               contains(fragment("unaccent(display_name)"), ^arg(:query)) or
+                 contains(japanese_name, ^arg(:query))
+             )
+    end
+
     create :create do
       accept [
         :slug,
@@ -30,6 +44,9 @@ defmodule Cineaste.Library.Person do
         :cause_of_death,
         :japanese_name
       ]
+
+      argument :aliases, {:array, :map}
+      change manage_relationship(:aliases, type: :direct_control)
     end
 
     update :update do
@@ -50,6 +67,10 @@ defmodule Cineaste.Library.Person do
         :cause_of_death,
         :japanese_name
       ]
+
+      require_atomic? false
+      argument :aliases, {:array, :map}
+      change manage_relationship(:aliases, type: :direct_control)
     end
   end
 
@@ -58,7 +79,7 @@ defmodule Cineaste.Library.Person do
 
     attribute :slug, :string, allow_nil?: false
     attribute :display_name, :string, allow_nil?: false
-    attribute :sort_name, :string
+    attribute :sort_name, :string, public?: true
     attribute :showcased, :boolean, default: false
     attribute :disambig_chars, :string
     attribute :profession, :string
@@ -74,6 +95,10 @@ defmodule Cineaste.Library.Person do
 
     create_timestamp :inserted_at
     update_timestamp :updated_at
+  end
+
+  relationships do
+    has_many :aliases, Cineaste.Library.PersonAlias, sort: [alias: :asc]
   end
 
   identities do

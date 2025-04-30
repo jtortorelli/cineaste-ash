@@ -33,9 +33,12 @@ defmodule Cineaste.Library do
 
     resource Cineaste.Library.Person do
       define :read_people, action: :read
+      define :search_people, action: :search, args: [:query]
       define :update_person, action: :update
       define :create_person, action: :create
       define :get_person_by_slug, action: :read, get_by: :slug
     end
+
+    resource Cineaste.Library.PersonAlias
   end
 end
