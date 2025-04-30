@@ -8,6 +8,33 @@ defmodule CineasteWeb.Admin.People.ShowLive do
 
   def render(assigns) do
     ~H"""
+    <div>
+      <h1>{@person.display_name}</h1>
+      <a class="btn" href={~p"/dev/admin/people/#{@person.slug}/edit"}>
+        <.icon name="tabler-pencil" /> Edit
+      </a>
+      <p>
+        Showcased: <span :if={@person.showcased}><.icon name="tabler-circle-check-filled" /></span>
+        <span :if={!@person.showcased}><.icon name="tabler-circle-x-filled" /></span>
+      </p>
+      <div>
+        <img src={@person.avatar_url} />
+      </div>
+      <p>Japanese Name: {@person.japanese_name || "N/A"}</p>
+      <p>Slug: <span class="font-mono">{@person.slug}</span></p>
+      <p>Sort Name: {@person.sort_name}</p>
+      <p>Disambiguation Characters: {@person.disambig_chars || "N/A"}</p>
+      <p>Profession: {@person.profession || "N/A"}</p>
+      <h2>Birth Details</h2>
+      <p>Birth Date: {@person.dob || "N/A"}</p>
+      <p>Birth Date Resolution: {@person.dob_resolution || "N/A"}</p>
+      <p>Birth Place: {@person.birth_place || "N/A"}</p>
+      <h2>Death Details</h2>
+      <p>Death Date: {@person.dod || "N/A"}</p>
+      <p>Death Date Resolution: {@person.dod_resolution || "N/A"}</p>
+      <p>Death Place: {@person.death_place || "N/A"}</p>
+      <p>Cause of Death: {@person.cause_of_death || "N/A"}</p>
+    </div>
     """
   end
 end
