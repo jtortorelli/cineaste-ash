@@ -2,7 +2,7 @@ defmodule CineasteWeb.Admin.People.FormLive do
   use CineasteWeb, :admin_live_view
 
   def mount(%{"slug" => slug}, _session, socket) do
-    person = Cineaste.Library.get_person_by_slug!(slug)
+    person = Cineaste.Library.get_person_by_slug!(slug, load: [:aliases])
     form = Cineaste.Library.form_to_update_person(person)
 
     socket =
@@ -48,10 +48,64 @@ defmodule CineasteWeb.Admin.People.FormLive do
       />
       <.input field={form[:death_place]} label="Death Place" />
       <.input field={form[:cause_of_death]} label="Cause of Death" />
+      <.alias_inputs form={form} />
       <:actions>
         <button class="btn">Save</button>
       </:actions>
     </.simple_form>
+    """
+  end
+
+  def alias_inputs(assigns) do
+    ~H"""
+    <h2>Aliases</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Alias</th>
+          <th>Japanese Name</th>
+          <th>Categeory</th>
+          <th>Context</th>
+        </tr>
+      </thead>
+      <tbody>
+        <.inputs_for :let={alias_form} field={@form[:aliases]}>
+          <tr data-id={alias_form.index}>
+            <td>
+              <.input field={alias_form[:alias]} />
+            </td>
+            <td>
+              <.input field={alias_form[:japanese_name]} />
+            </td>
+            <td>
+              <.input
+                field={alias_form[:category]}
+                type="select"
+                options={["birth_name", "alias", "mistranslation"]}
+              />
+            </td>
+            <td>
+              <.input field={alias_form[:context]} />
+            </td>
+            <td>
+              <a
+                class="btn"
+                phx-click="remove-alias"
+                phx-value-path={alias_form.name}
+                kind="error"
+                size="xs"
+              >
+                <.icon name="tabler-trash" />
+              </a>
+            </td>
+          </tr>
+        </.inputs_for>
+      </tbody>
+    </table>
+
+    <a class="btn" phx-click="add-alias">
+      Add Alias
+    </a>
     """
   end
 
@@ -78,5 +132,17 @@ defmodule CineasteWeb.Admin.People.FormLive do
 
         {:noreply, socket}
     end
+  end
+
+  def handle_event("add-alias", _params, socket) do
+    socket = update(socket, :form, fn form -> AshPhoenix.Form.add_form(form, :aliases) end)
+
+    {:noreply, socket}
+  end
+
+  def handle_event("remove-alias", %{"path" => path}, socket) do
+    socket = update(socket, :form, fn form -> AshPhoenix.Form.remove_form(form, path) end)
+
+    {:noreply, socket}
   end
 end
