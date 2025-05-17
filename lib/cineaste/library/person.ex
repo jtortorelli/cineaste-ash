@@ -46,7 +46,9 @@ defmodule Cineaste.Library.Person do
       ]
 
       argument :aliases, {:array, :map}
+      argument :relatives, {:array, :map}
       change manage_relationship(:aliases, type: :direct_control)
+      change manage_relationship(:relatives, type: :direct_control, order_is_key: :order)
     end
 
     update :update do
@@ -70,7 +72,9 @@ defmodule Cineaste.Library.Person do
 
       require_atomic? false
       argument :aliases, {:array, :map}
+      argument :relatives, {:array, :map}
       change manage_relationship(:aliases, type: :direct_control)
+      change manage_relationship(:relatives, type: :direct_control, order_is_key: :order)
     end
   end
 
@@ -99,6 +103,10 @@ defmodule Cineaste.Library.Person do
 
   relationships do
     has_many :aliases, Cineaste.Library.PersonAlias, sort: [alias: :asc]
+
+    has_many :relatives, Cineaste.Library.PersonRelative,
+      destination_attribute: :self_id,
+      sort: [order: :asc]
   end
 
   identities do

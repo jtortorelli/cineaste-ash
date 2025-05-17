@@ -30,7 +30,7 @@ defmodule Cineaste.Library.PersonAlias do
   attributes do
     uuid_primary_key :id
 
-    attribute :alias, :string
+    attribute :alias, :string, allow_nil?: false
     attribute :japanese_name, :string
     attribute :category, :atom, constraints: [one_of: [:birth_name, :alias, :mistranslation]]
     attribute :context, :string

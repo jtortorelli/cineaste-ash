@@ -2,7 +2,7 @@ defmodule CineasteWeb.Admin.People.ShowLive do
   use CineasteWeb, :admin_live_view
 
   def mount(%{"slug" => slug}, _session, socket) do
-    person = Cineaste.Library.get_person_by_slug!(slug, load: [:aliases])
+    person = Cineaste.Library.get_person_by_slug!(slug, load: [:aliases, relatives: [:relative]])
     {:ok, assign(socket, person: person)}
   end
 
@@ -45,6 +45,14 @@ defmodule CineasteWeb.Admin.People.ShowLive do
           |> Enum.reject(&is_nil(&1))
           |> Enum.join(", ")})
         </p>
+      <% end %>
+
+      <h2>Relatives</h2>
+      <div :if={Enum.empty?(@person.relatives)}>
+        <p>No relatives</p>
+      </div>
+      <%= for relative <- @person.relatives do %>
+        <p>{relative.relative.display_name} ({relative.relationship})</p>
       <% end %>
     </div>
     """
