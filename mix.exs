@@ -78,7 +78,8 @@ defmodule Cineaste.MixProject do
        app: false,
        compile: false,
        depth: 1},
-      {:live_select, "~> 1.0"}
+      {:live_select, "~> 1.0"},
+      {:tidewave, "~> 0.1", only: [:dev]}
     ]
   end
 
