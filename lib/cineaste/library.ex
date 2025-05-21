@@ -41,5 +41,22 @@ defmodule Cineaste.Library do
 
     resource Cineaste.Library.PersonAlias
     resource Cineaste.Library.PersonRelative
+    resource Cineaste.Library.TVSeries
+    resource Cineaste.Library.Book
+    resource Cineaste.Library.BookSeries
+    resource Cineaste.Library.Serial
+    resource Cineaste.Library.Script
+    resource Cineaste.Library.ShortStory
+    resource Cineaste.Library.BookAuthor
+    resource Cineaste.Library.BookSeriesAuthor
+    resource Cineaste.Library.SerialAuthor
+    resource Cineaste.Library.ScriptAuthor
+    resource Cineaste.Library.ShortStoryAuthor
+    resource Cineaste.Library.TVSeriesFilmAdaptation
+    resource Cineaste.Library.BookFilmAdaptation
+    resource Cineaste.Library.BookSeriesFilmAdaptation
+    resource Cineaste.Library.SerialFilmAdaptation
+    resource Cineaste.Library.ScriptFilmAdaptation
+    resource Cineaste.Library.ShortStoryFilmAdaptation
   end
 end
